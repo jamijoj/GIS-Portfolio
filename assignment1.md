@@ -27,6 +27,7 @@ When I thought about the initial purpose of this map, namely a map for the Pitts
 I made all adjustments under the “More Options” settings in the Map Styling Wizard. Here is a detailed breakdown of all the changes I made:
 
 | Feature Type | Element Type | Stylers |
+|------------|------------|------------|
 |All	|Geometry |Color: 0d0d0d |
 |Administrative --> Locality|Labels-->Text |Hidden |
 |Administrative-->Neighborhood |Labels-->Text	|Color: f2e5bd |
