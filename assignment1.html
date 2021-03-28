@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Give me a name!</title>
+    <title>Styled Map for Pittsburgh Opera </title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style>
@@ -22,13 +22,248 @@
     <div id="map"></div>
     <script>
       function initMap() {
-        // Styles a map in custom mode.
+        // Styles a map in Pittsburgh Opera style mode.
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.4583498, lng: -80.079528},  // Setting the center to Pittsburgh, change as you like
           zoom: 15,  // Setting a zoom scale for Pittsburgh
-          styles:    // Add JSON from Map Style Wizard below this line... 
-          https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBtz-RWF5M8LKVKjSox0nfc2N0ssNiUb0s&center=40.44386439617808,-79.9918963429442&zoom=15&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x0d0d0d%7Cvisibility:on&style=element:labels.text.fill%7Ccolor:0xffffff&style=element:labels.text.stroke%7Ccolor:0x52b3d9%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text%7Cvisibility:off&style=feature:administrative.neighborhood%7Celement:labels.text%7Ccolor:0xf2e5bd&style=feature:poi%7Celement:labels.icon%7Ccolor:0x52b3d9%7Cvisibility:simplified%7Cweight:0.5&style=feature:poi%7Celement:labels.text%7Ccolor:0x6b6b6b&style=feature:poi.attraction%7Celement:labels.icon%7Ccolor:0x52b3d9&style=feature:poi.park%7Celement:geometry%7Ccolor:0x27272b&style=feature:poi.park%7Celement:labels.icon%7Cvisibility:off&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b&style=feature:road%7Celement:geometry.fill%7Ccolor:0x592b02&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x52b3d9&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x734002&style=feature:road.arterial%7Celement:labels.icon%7Cvisibility:off&style=feature:road.arterial%7Celement:labels.text%7Ccolor:0xf2d680&style=feature:road.highway%7Celement:geometry%7Ccolor:0x8c5d04&style=feature:road.highway%7Celement:labels.icon%7Cvisibility:off&style=feature:road.highway%7Celement:labels.text%7Cvisibility:off&style=feature:road.local%7Celement:labels.text%7Ccolor:0xf2d680&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:transit%7Cvisibility:off&style=feature:water%7Celement:geometry%7Ccolor:0x27272b&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x3d3d3d&size=480x360
-// ..and here's the end of JSON from Style Wizard          
+          styles:    // Add JSON from Map Style Wizard below this line...
+          [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#0d0d0d"
+      },
+      {
+        "visibility": "on"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#ffffff"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#52b3d9"
+      },
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.neighborhood",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "color": "#f2e5bd"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "color": "#52b3d9"
+      },
+      {
+        "visibility": "simplified"
+      },
+      {
+        "weight": 0.5
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "color": "#6b6b6b"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.attraction",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "color": "#52b3d9"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#27272b"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1b1b1b"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#592b02"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#52b3d9"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#734002"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "color": "#f2d680"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#8c5d04"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "color": "#f2d680"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#27272b"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#3d3d3d"
+      }
+    ]
+  }
+]
+
+          // ..and here's the end of JSON from Style Wizard          
         });
       }
 // Don't forget your API Key below vv
