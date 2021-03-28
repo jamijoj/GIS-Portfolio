@@ -16,5 +16,8 @@ Source: pittsburghopera.org
 
 
 ## Creating the Color Palette
-After choosing the organization, I needed to make a color palette for the map. I ran the photo of the opera house as well as the screenshot from the webpage through Adobe Color’s color palette generator (hyperlink: https://color.adobe.com/create/image) and got the following color palettes:
+After choosing the organization, I needed to make a color palette for the map. I ran the photo of the opera house as well as the screenshot from the webpage through [Adobe Color’s color palette generator](https://color.adobe.com/create/image) and got the following color palettes:  
+
+<img width="500" alt="Color Palette 1" src="https://user-images.githubusercontent.com/73584997/112772234-ae60a800-8ffd-11eb-87b1-e624e688542b.png"><img width="500" alt="Color Palette 2" src="https://user-images.githubusercontent.com/73584997/112772308-08616d80-8ffe-11eb-87ea-22c51339c1c2.png">
+
 
