@@ -17,4 +17,4 @@ I am currently in an advanced GIS course to continue learning statistical analys
 
 Feel free to look through these projects I've done for my GIS courses. 
 
-[Assignment: Building and deploying a custom Google Map for a non-profit organization](assignment1.html)
+[Assignment: Building and deploying a custom Google Map for a non-profit organization](assignment1fullmap.html)
