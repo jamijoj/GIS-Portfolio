@@ -24,7 +24,22 @@ After choosing the organization, I needed to make a color palette for the map. I
 The next step was to make the map. I used Google Map’s [Map Styling Wizard](https://mapstyle.withgoogle.com/) to make this map. I started with the Dark theme since I knew I wanted a dark background. Next, I changed the roads to a dark shade of brown on the first color palette. Since lighter colors can be a bit distracting, especially on a dark background, I used the shade of light brown from the first color palette for the highways, which were sparser, giving the effect of a highlight rather than a full color fill, which is what I wanted. The lightest yellows on the first color palette were colors I wanted to show up a lot, but not in thick, solid lines, rather in small “dots” to mimic the effect of sparkling lights from that first picture. For that reason, I assigned these colors to names of the main roads and neighborhoods.  I originally had the local street names set to one of these lighter colors as well, but it was too distracting so I ended up changing them to a more subtle grey tone. I used a similar, though slightly darker, grey tone for water and landforms.  
 When I thought about the initial purpose of this map, namely a map for the Pittsburgh Opera to use, I imagined that the main audience would be people trying to find things to do in Pittsburgh, whether that be toursist or locals. Because of that, I decided the map should include points highlighting other attractions in Pittsburgh. Up to this point, the map had a very “earthy” feel to it from all the brown tones. Adding points of interest gave me a chance to use the other color palette generated from the webpage. I selected the light blue color for the points of interest because it contrasted nicely with the yellow-brown theme of the map and had the added benefit of being from the Pittsburgh Opera’s style guide (I’m assuming, from its heavy use on the website).
 
-This is a detailed breakdown of all the changes I made:
+I made all adjustments under the “More Options” settings in the Map Styling Wizard. Here is a detailed breakdown of all the changes I made:
 
-
-
+| Feature Type | Element Type | Stylers |
+|All	|Geometry |Color: 0d0d0d |
+|Administrative --> Locality|Labels-->Text |Hidden |
+|Administrative-->Neighborhood |Labels-->Text	|Color: f2e5bd |
+|Points of Interest |Labels-->Text	|Color: 6b6b6b |
+|Points of Interest	|Icon	|Color: 52b3d9 |
+|Points of Interest-->Attraction	|Icon	|Shown |
+|Points of Interest-->Park	|Geometry	|Color: 27272b |
+|Road-->Highway	|Geometry	|Color: 8c5d04 |
+|Road-->Highway	|Text	|Hidden |
+|Road-->Highway	|Icon	|Hidden |
+|Road-->Arterial	|Geometry	|Color: 734002 |
+|Road-->Arterial	|Text	|Color: f2d680 |
+|Road-->Arterial	|Icon	|Hidden |
+|Road-->Local	|Geometry	|Color: 592b02 |
+|Road-->Local	|Text	|Color: 616161 |
+|Water	|Geometry	|Color: 27272b |
