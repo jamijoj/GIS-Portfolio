@@ -16,3 +16,5 @@ I am currently in an advanced GIS course to continue learning statistical analys
 ## Portfolio
 
 Feel free to look through these projects I've done for my GIS courses. 
+
+[Assignment: Build and deploy a custom Google Map for a non-profit organization](assignment1.html)
