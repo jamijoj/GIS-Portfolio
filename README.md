@@ -1,4 +1,4 @@
-# GIS portfolio
+# GIS Portfolio
 Welcome to my GIS portfolio!
 
 # About Me
