@@ -1,5 +1,4 @@
-# GIS Portfolio
-Welcome to my GIS portfolio!
+# Welcome to my GIS portfolio!
 
 # About Me
 My name is Jamila Jordan and I am a second-year Master of Arts Management student at Carnegie Mellon University in Pittsburgh. My interests include incorporation of authentic non-Western and Indigenous narratives into the Western museum world, the integration of art and tech, and data analysis for the arts. I am lucky that CMU offers a wide range of courses so I have been able to build my skillset for all ares of interest through different courses. One of these courses is GIS. As an artstic person who is also interested in data analytics and data visualization, I enjoyed the possibilities offered by GIS and wanted to explore the field more. I took an introductory GIS course in 2020 with Professor Sean Qian at CMU. As I dove deeper into the world of GIS, I realized that the possibilities for using GIS in my fields of interest - specifically data analysis for the arts - were plenty, but that no one has really been using this tool toward that end. I decided to continue learning GIS so that I can help build up the field of data in the arts using GIS. 
