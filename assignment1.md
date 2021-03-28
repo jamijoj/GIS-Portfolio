@@ -5,7 +5,6 @@ The first assignment for this class asked us to create a custom, brand-ready map
 
 ## Selecting the Organization
 The organization I chose is the Pittsburgh Opera. I chose this organization because I found this really neat picture online whose color palette I thought would lend itself well to a distinct-looking map. 
-
 <img width="500" alt="Pittsburgh Opera photo" src="https://user-images.githubusercontent.com/73584997/112771739-5de84b00-8ffb-11eb-87cf-53db79cc1343.png">  
 Source: David Bachman, Google Photos, 2015
 
