@@ -8,4 +8,4 @@ I am currently in an advanced GIS course to continue learning statistical analys
 
 
 ## Portfolio
-Feel free to look through these various projects I've done using GIS. 
+Feel free to look through these projects I've done using GIS. 
