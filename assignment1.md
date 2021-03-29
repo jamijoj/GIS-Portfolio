@@ -18,10 +18,11 @@ Source: pittsburghopera.org
 ## Creating the Color Palette
 After choosing the organization, I needed to make a color palette for the map. I ran the photo of the opera house as well as the screenshot from the webpage through [Adobe Color’s color palette generator](https://color.adobe.com/create/image) and got the following color palettes:  
 
-<img width="500" alt="Color Palette 1" src="https://user-images.githubusercontent.com/73584997/112772234-ae60a800-8ffd-11eb-87b1-e624e688542b.png"> <img width="500" alt="Color Palette 2" src="https://user-images.githubusercontent.com/73584997/112772308-08616d80-8ffe-11eb-87ea-22c51339c1c2.png">
+<img width="500" alt="Color Palette 1" src="https://user-images.githubusercontent.com/73584997/112772234-ae60a800-8ffd-11eb-87b1-e624e688542b.png">  <img width="500" alt="Color Palette 2" src="https://user-images.githubusercontent.com/73584997/112772308-08616d80-8ffe-11eb-87ea-22c51339c1c2.png">
 
 ## Making the Map
 The next step was to make the map. I used Google Map’s [Map Styling Wizard](https://mapstyle.withgoogle.com/) to make this map. I started with the Dark theme since I knew I wanted a dark background. Next, I changed the roads to a dark shade of brown on the first color palette. Since lighter colors can be a bit distracting, especially on a dark background, I used the shade of light brown from the first color palette for the highways, which were sparser, giving the effect of a highlight rather than a full color fill, which is what I wanted. The lightest yellows on the first color palette were colors I wanted to show up a lot, but not in thick, solid lines, rather in small “dots” to mimic the effect of sparkling lights from that first picture. For that reason, I assigned these colors to names of the main roads and neighborhoods.  I originally had the local street names set to one of these lighter colors as well, but it was too distracting so I ended up changing them to a more subtle grey tone. I used a similar, though slightly darker, grey tone for water and landforms.  
+  
 When I thought about the initial purpose of this map, namely a map for the Pittsburgh Opera to use, I imagined that the main audience would be people trying to find things to do in Pittsburgh, whether that be toursist or locals. Because of that, I decided the map should include points highlighting other attractions in Pittsburgh. Up to this point, the map had a very “earthy” feel to it from all the brown tones. Adding points of interest gave me a chance to use the other color palette generated from the webpage. I selected the light blue color for the points of interest because it contrasted nicely with the yellow-brown theme of the map and had the added benefit of being from the Pittsburgh Opera’s style guide (I’m assuming, from its heavy use on the website).
 
 I made all adjustments under the “More Options” settings in the Map Styling Wizard. Here is a detailed breakdown of all the changes I made:
@@ -43,4 +44,12 @@ I made all adjustments under the “More Options” settings in the Map Styling 
 |Road-->Arterial	|Icon	|Hidden |
 |Road-->Local	|Geometry	|Color: 592b02 |
 |Road-->Local	|Text	|Color: 616161 |
-|Water	|Geometry	|Color: 27272b |
+|Water	|Geometry	|Color: 27272b |  
+  
+## Final Map
+This is the final product! And here is the final product! The result is a map that is easy on the eyes with points of interest easy to find.
+
+<img width="800" alt="FinalMap" src="https://user-images.githubusercontent.com/73584997/112772691-35168480-9000-11eb-8867-d2bec2eead8a.png">
+
+
+Click on the picture of the map to interact with it in real life and let me know what you think!
