@@ -49,7 +49,7 @@ I made all adjustments under the “More Options” settings in the Map Styling 
 ## Final Map
 This is the final product! And here is the final product! The result is a map that is easy on the eyes with points of interest easy to find.
 
-<img width="800" alt="FinalMap" src="https://user-images.githubusercontent.com/73584997/112772870-3d22f400-9001-11eb-9f75-51f0070fec98.png">
+[<img width="800" alt="FinalMap" src="https://user-images.githubusercontent.com/73584997/112772870-3d22f400-9001-11eb-9f75-51f0070fec98.png">](assignment1fullmap.html)
 
 
 Click on the picture of the map to interact with it in real life and let me know what you think!
