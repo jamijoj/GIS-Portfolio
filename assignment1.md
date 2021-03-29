@@ -54,4 +54,4 @@ This is the final product! The result is a map that is easy on the eyes with poi
 
 Click on the picture of the map to interact with it in real life and let me know what you think!
 
-[Go back to the homepage](README.md)
+[Go back to GIS Portfolio](README.md)
