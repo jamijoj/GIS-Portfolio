@@ -8,7 +8,8 @@ In their [2020 “Culture Counts” Report](http://www.pittsburghartscouncil.org
 This same report found that of those who rely on public transit, meaning they take it at least once a week, the highest percentage (38.2 percent) make under $25,000, and while almost a quarter (23.5 percent) make between $25k and $49.9k.  It also found that “...37 percent of African American residents ride public transit at least 5 days a week, which is more than twice the rate of white residents.  In these same income brackets, almost half (45.1 percent) of those making under 25k, and 42.3 percent of those making 25k to 49.9k, rated public transit as having a “moderate” to “severe” problem.   So, though the data show that attendance rates have increased, the question remains: Who is coming? And, more importantly, who is not coming, and why not? This project will attempt to partially answer that question by revealing potential correlations between arts & culture attendance, public transit, income, and race in Pittsburgh .
 
 Additionally, Pittsburgh is attempting to become a cultural epicenter. Culture Counts reported that “the arts and culture sector draws larger audiences than Pittsburgh’s three professional sports teams.”  A transit system that does not allow equal access to all audiences could represent lost revenue for the arts & culture sector, which has proven to be a driver of Pittsburgh’s economic health. Findings from this project can help city planners decide which transit routes need to be augmented in order to help shrink disparities in arts & culture attendance and, in turn, provide an extra boost to Pittsburgh’s income from the arts & culture sector. 
- 
+&nbsp;  
+
 ## Approach/Methodology
 
 This project consisted of two parts: building the map and performing analyses. 
@@ -30,6 +31,7 @@ a.	Facilities used in the service area are Pittsburgh)’s arts and cultural org
 3.	Determine correlation between race, income, and accessibility&nbsp;  
 &nbsp;  a.	Spatially join attendance census tracts to service area. Use attendance rate and frequency of attendance to determine if the two variables are correlated.&nbsp;  
 &nbsp;  b.	Spatially join race and income layer to the network layer. Use Black/AfroAm population ratio and median income to arts & culture organization arrival times to determine if there is a correlation. 
+&nbsp;  
 
 ## Process Log
 ### Create Race and Income tracts and tract centroids based off census tract shapefile, and census race and income info &nbsp;  
@@ -66,6 +68,7 @@ a.	Facilities used in the service area are Pittsburgh)’s arts and cultural org
 1.	Create a service area using Network Analysis Service Area. Mode should be set to “Public Transit Time.” Set cutoff times to 5, 10, 20, 30, and 60. Set the Date and Time section to Saturday at 2pm, a popular visitation time at arts and culture organizations.&nbsp;   
 2.	Import arts and culture orgs as facilities using the Import Facilities button and adding points from the Pittsburgh arts organizations point layer.&nbsp;  
 3.	Run the service area.&nbsp;  
+&nbsp;  
 
 ## Analyses, Questions, and Solutions
 
@@ -121,6 +124,7 @@ This shows that the population percentage of Black/AfroAmericans is highest in t
 <img width="700" alt="table5" src="https://user-images.githubusercontent.com/73584997/113476053-d6f60100-9446-11eb-8ef7-1360331a94c8.png">&nbsp;   
 Comparing the race and income table with the attendance table, the service area from 0 to 10 minutes by public transit has the highest attendance rate, the lowest Black/AfroAm ratio, and the highest mean HH income. 
 
+&nbsp;  
 
 ## Findings and Future Work
 
@@ -131,6 +135,7 @@ Though there is some correlation between the variables, after the 0 -10 minute s
 
 This project yielded some interesting findings. One that I think is worth researching more in future is the initial observation that most of the arts and cultural organizations are clustered on the east side of Pittsburgh. This is most likely the heart of Pittsburgh’s cultural district, specifically created to generate money for the city through local and non-local tourism. It could be useful to use the Pittsburgh public transit network dataset to calculate the how difficult and/or costly it is to traverse the city of Pittsburgh on public transit as a tourist would. The results of such a study could help city planners make decisions about if shuttles or additional bus lines are needed. 
 
+&nbsp;  
 
 ## Data Sources
 
@@ -163,6 +168,7 @@ Pittsburgh arts & culture organizations
 Pittsburgh GTFS data:
  - https://www.portauthority.org/business-center/developer-resources/
 
+&nbsp;  
 
 ## References
 
