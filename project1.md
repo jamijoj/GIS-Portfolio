@@ -83,7 +83,7 @@ The results of the “Select by Attribute” where average attendance rate was 1
 
 Since my main concern was finding out how accessibility by public transit affects attendance, I used the Service Area I created from the Pittsburgh Public Transit system and ran it with a cutoff of 5, 10, 20, 40, and 60 minutes to find out what attendance was like for those who lived within those travel times. I spatially joined the TractsAttendanceCentroids layer to the service area.&nbsp;   
 
-![Layout1](https://user-images.githubusercontent.com/73584997/113475929-2be54780-9446-11eb-834f-8daaa455a116.jpg)&nbsp;  
+<img width="700" alt="Layout1" src="https://user-images.githubusercontent.com/73584997/113475929-2be54780-9446-11eb-834f-8daaa455a116.jpg">&nbsp;  
 This showed that almost every neighborhood in Pittsburgh had accessibility to an arts organization within at least 60 minutes. The exceptions were the neighborhoods Hays and New Homestead.
 
 I examined the attribute table and ran the Table to Excel tool to show the results. The last row, 40 to 60 minutes, only has 4 responses, meaning the survey most likely received less and less responses the farther from the center of Pittsburgh. The row can be disregarded as there were only 4 responses, so it is not representative. 
@@ -106,11 +106,11 @@ My next question had to do with the correlation between race and income and acce
 I answered this question by joining the attribute table from the Race/Income Tract centroids to the TractAttendance centroids. With the Service Area cutoff still set to 10,20,30, and 40 minutes, I did a spatial join once again of the tract centroids to the service areas.&nbsp;  
 
 
-![Layout2](https://user-images.githubusercontent.com/73584997/113475930-2daf0b00-9446-11eb-934b-9e337c08ed4f.jpg)
+<img width="700" alt="Layout2" src="https://user-images.githubusercontent.com/73584997/113475930-2daf0b00-9446-11eb-934b-9e337c08ed4f.jpg">&nbsp;  
 From looking at the map, it appears that there could be a correlation between distance and Black/Afro American populations. Areas that are more heavily Black/Afro American appear to be slightly farther from arts organizations by public transit. I also noticed there are some neighborhoods that fall outside of the service areas: Chartiers City, Banksville, Lincoln Place, and Homestead, however, these neighborhoods do not appear to have a notable Black/AfroAm population ratio.&nbsp;  
 
 
-![Layout3](https://user-images.githubusercontent.com/73584997/113475932-2e47a180-9446-11eb-8b14-e096d462e844.jpg)
+<img width="700" alt="Layout3" src="https://user-images.githubusercontent.com/73584997/113475932-2e47a180-9446-11eb-8b14-e096d462e844.jpg">&nbsp;  
 Looking at the map with Household Median Income symbolized using graduated colors and graduated symbols, it appears that there is a slight correlation between income and time by public transit to an arts organization. The neighborhoods that are not within the service area, Chartiers City, Banksville, Lincoln Place, and Homestead, do not appear to have a notably low median income.&nbsp;  
 
 
@@ -130,6 +130,7 @@ Though there is some correlation between the variables, after the 0 -10 minute s
 
 
 This project yielded some interesting findings. One that I think is worth researching more in future is the initial observation that most of the arts and cultural organizations are clustered on the east side of Pittsburgh. This is most likely the heart of Pittsburgh’s cultural district, specifically created to generate money for the city through local and non-local tourism. It could be useful to use the Pittsburgh public transit network dataset to calculate the how difficult and/or costly it is to traverse the city of Pittsburgh on public transit as a tourist would. The results of such a study could help city planners make decisions about if shuttles or additional bus lines are needed. 
+
 
 ## Data Sources
 
@@ -166,28 +167,24 @@ Pittsburgh GTFS data:
 ## References
 
 “Create and use a network dataset with public transit data.” Pro.ArcGIS.com. Accessed 1 December 2020. 
-https://pro.arcgis.com/en/pro-app/help/analysis/networks/create-and-use-a-network-dataset-with-
-public-transit-data.htm)
+https://pro.arcgis.com/en/pro-app/help/analysis/networks/create-and-use-a-network-dataset-with-public-transit-data.htm)
 
 Gorr, Wilpen L. and Kristen S. Kurland. Pittsburgh Neighborhoods. November 30, 2017. Found in GIS Tutorial for 
 ArcGIS Pro: A Platform Workbook, Tutorial 5-3. Redlands, California: Esri Press, 2017.
 
 Greater Pittsburgh Arts Council. 2020 Greater Pittsburgh Culture Counts Technical Report. Pittsburgh, 2020. 
-Accessed November 2020.  http://www.pittsburghartscouncil.org/storage/documents/Research/
-Culture_Counts-2020-Technical_Report.pdf
+Accessed November 2020.  http://www.pittsburghartscouncil.org/storage/documents/Research/Culture_Counts-2020-Technical_Report.pdf
 
 SMU Data Arts. Data, resources, and insights for the Arts. https://www.culturaldata.org/.
 
 U.S. Census Bureau, 2019 American Community Survey. Income in the Past 12 Months (in 2019 Inflation-Adjusted 
-Dollars). Distributed by Data.census.gov. https://data.census.gov/cedsci/table?q=Income%20and%20
-Earnings&t=Income%20and%20Poverty&g=0500000US42003,42003.140000&tid=ACSST1Y2019.S1901&hidePreview=true
+Dollars). Distributed by Data.census.gov. https://data.census.gov/cedsci/table?q=Income%20and%20Earnings&t=Income%20and%20Poverty&g=0500000US42003,42003.140000&tid=ACSST1Y2019.S1901&hidePreview=true
 
 U.S. Census Bureau, 2019 American Community Survey. Race. Distributed by Data.census.gov. 
 https://data.census.gov/cedsci/table?q=race&t=Income%20and%20Poverty&g=0500000US42003,42003.140000&tid=ACSDT1Y2019.B02001&hidePreview=true
 
 University of Pittsburgh University Center for Social and Urban Research. The Pittsburgh Regional Quality of Life 
-Survey, Pittsburgh, December 2018. Accessed November 2020.  https://www.ucsur.pitt.edu/files/center
-/qol/2018/Pittsburgh%20Regional%20QOL%20Survey%20Full%20Report_2018.pdf.
+Survey, Pittsburgh, December 2018. Accessed November 2020.  https://www.ucsur.pitt.edu/files/center/qol/2018/Pittsburgh%20Regional%20QOL%20Survey%20Full%20Report_2018.pdf.
 
 Western PA Regional Data Center.  2010 Census Block Groups. May 23, 2018. Distributed by Western Pennsylvania 
 Regional Data Center. https://data.wprdc.org/dataset/2010-census-block-groups.
@@ -196,7 +193,4 @@ Western PA Regional Data Center. Allegheny County Zip Code Boundaries. February 
 Data.gov. https://catalog.data.gov/dataset/allegheny-county-zip-code-boundaries-9a066.
 
 Western PA Regional Data Center. Port Authority of Allegheny County Transit Stops. October 31, 2019. Distributed
-by Western Pennsylvania Regional Data Center. https://data.wprdc.org/dataset/port-authority-
-of-allegheny-county-transit-stops.
-
-
+by Western Pennsylvania Regional Data Center. https://data.wprdc.org/dataset/port-authority-of-allegheny-county-transit-stops.
