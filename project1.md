@@ -67,4 +67,8 @@ b.	Spatially join race and income layer to the network layer. Use Black/AfroAm p
 2.	Import arts and culture orgs as facilities using the Import Facilities button and adding points from the Pittsburgh arts organizations point layer.&nbsp;  
 3.	Run the service area.&nbsp;  
 
+## Analyses, Questions, and Solutions
+
+### Question 1: Does time it takes to get to an arts locale by public transit impact attendance?
+
 
