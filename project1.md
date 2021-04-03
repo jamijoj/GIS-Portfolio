@@ -76,23 +76,26 @@ My first observation was that all of the arts organizations seemed to be general
 ![image](https://user-images.githubusercontent.com/73584997/113475757-7ca87080-9445-11eb-8ef7-2f3f3159abec.png)&nbsp;  
 A visual comparison of the attendance rate (represented by graduated symbols) and location of arts orgs did not yield any clear results, so I decided to do a simple “Select by Attribute” to see where average attendance rate was 10 times per year or higher.&nbsp;  
 
+
 ![image](https://user-images.githubusercontent.com/73584997/113475762-816d2480-9445-11eb-9198-8342ddfc65c7.png)&nbsp;  
+
 The results of the “Select by Attribute” where average attendance rate was 10 times per year or higher yielded a clearer correlation. The attendance rate is higher in the general vicinity of the cluster of arts organizations, which is unsurprising. It makes sense that those who are closer will attend more often. 
 
 Since my main concern was finding out how accessibility by public transit affects attendance, I used the Service Area I created from the Pittsburgh Public Transit system and ran it with a cutoff of 5, 10, 20, 40, and 60 minutes to find out what attendance was like for those who lived within those travel times. I spatially joined the TractsAttendanceCentroids layer to the service area.&nbsp;   
+
 ![Layout1](https://user-images.githubusercontent.com/73584997/113475929-2be54780-9446-11eb-834f-8daaa455a116.jpg)&nbsp;  
 This showed that almost every neighborhood in Pittsburgh had accessibility to an arts organization within at least 60 minutes. The exceptions were the neighborhoods Hays and New Homestead.
 
 I examined the attribute table and ran the Table to Excel tool to show the results. The last row, 40 to 60 minutes, only has 4 responses, meaning the survey most likely received less and less responses the farther from the center of Pittsburgh. The row can be disregarded as there were only 4 responses, so it is not representative. 
 The attendance rate is calculated using those who attended at least once.&nbsp;   
-![image](https://user-images.githubusercontent.com/73584997/113475973-65b64e00-9446-11eb-8a5f-b4e9675045fa.png)
+![image](https://user-images.githubusercontent.com/73584997/113475973-65b64e00-9446-11eb-8a5f-b4e9675045fa.png)&nbsp;  
 This shows that the longer the time it takes by bus, the lower the attendance rate in general. However, the attendance rates between 0-5 minutes and 0-10 minutes are similar, as are the rates between 10-20 minutes and 20-40 minutes. 
 
 I decided to rerun the service area, this time with cutoff times of 10, 20, 30, and 40. 
-![image](https://user-images.githubusercontent.com/73584997/113475996-7cf53b80-9446-11eb-935f-b77683f2b962.png)
+![image](https://user-images.githubusercontent.com/73584997/113475996-7cf53b80-9446-11eb-935f-b77683f2b962.png)&nbsp;  
 These results showed that there was a drop in attendance rate of around 7 to 10 percent for places that were more than 10 minutes away by public transit.&nbsp;   
 
-![image](https://user-images.githubusercontent.com/73584997/113476002-88486700-9446-11eb-83a4-fa6896d3d749.png)
+![image](https://user-images.githubusercontent.com/73584997/113476002-88486700-9446-11eb-83a4-fa6896d3d749.png)&nbsp;  
 I then calculated the rate of attendees by category of how many times a year they attended. It appears that those who live closer by public transit are more likely to attend more than 10 times a year.&nbsp;  
 
 
