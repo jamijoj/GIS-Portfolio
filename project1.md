@@ -41,8 +41,8 @@ a.	Facilities used in the service area are Pittsburgh)’s arts and cultural org
 &nbsp;  &nbsp;  ii.	Household income data: Remove all columns except those with GEO_ID, Census Tract Name, and Household data. Extract Tract ID numbers from Census Name column&nbsp;  
 &nbsp;  b.	Table join race and income to Allegheny County Census Tract based on TractID&nbsp;  
 4.	Create RaceandIncome Tract Centroids&nbsp;  
-&nbsp;  a.	Table join Pittsburgh neighborhoods table to Allegheny Census tracts on Tract Number
-&nbsp;  b.	Use Layer from Selection to create Pittsburgh Census Tracts. Convert numbers from text to number by creating new fields as Double and using Field Calculate to copy values. Fill null values with 0. Convert percent household income to number of households per income by calculating each percent by total household.
+&nbsp;  a.	Table join Pittsburgh neighborhoods table to Allegheny Census tracts on Tract Number&nbsp;  
+&nbsp;  b.	Use Layer from Selection to create Pittsburgh Census Tracts. Convert numbers from text to number by creating new fields as Double and using Field Calculate to copy values. Fill null values with 0. Convert percent household income to number of households per income by calculating each percent by total household.&nbsp;  
 &nbsp;  c.	Create Race/Income tract Centroids using the Feature to Point tool.
 
 ### Create Pittsburgh neighborhoods by race and income&nbsp;  
