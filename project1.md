@@ -9,4 +9,25 @@ This same report found that of those who rely on public transit, meaning they ta
 
 Additionally, Pittsburgh is attempting to become a cultural epicenter. Culture Counts reported that “the arts and culture sector draws larger audiences than Pittsburgh’s three professional sports teams.”  A transit system that does not allow equal access to all audiences could represent lost revenue for the arts & culture sector, which has proven to be a driver of Pittsburgh’s economic health. Findings from this project can help city planners decide which transit routes need to be augmented in order to help shrink disparities in arts & culture attendance and, in turn, provide an extra boost to Pittsburgh’s income from the arts & culture sector. 
  
+## Approach/Methodology
+
+This project consisted of two parts: building the map and performing analyses. 
+
+### Building the map
+1.	Create a map of Pittsburgh in GIS that includes the following layers:
+  a.	Pittsburgh neighborhoods, table of census tracts that make up each neighborhood obtained from University of Pittsburgh University Center for Urban and Social Research (USCSR)
+   b.	Pittsburgh demographics (race and income) by census tract, obtained from census.gov
+   c.	Pittsburgh arts & culture attendance rates, by census tract. 
+      i.	Information provided by USCSR from their 2018 Pittsburgh Quality of Life survey. The dataset was provided as a set of responses to all questions in the survey. I created a dataset for use in the project by using the responses to the questions: “During the past year, about how many times have you visited a local museum or gallery or attended an art or cultural event, such as a play, concert, festival, reading or film? Responses were recorded in the following ranges: None, 1-2, 3-5, 6-10, 11-20, 21 or more. The final table contained 1851 from 365 census tracts in Allegheny County. I calculated and added fields Average Attendance Rate Per Tract and Number of Positive Responses per Tract
+
+2.	Create a network dataset and service area using publicly available information on Pittsburgh’s transit General Transit Feed Specification (GTFS), data obtained from portauthority.gov
+   a.	Facilities used in the service area are Pittsburgh’s arts and cultural organization. A list of these was provided by SMU Data Arts, an organization dedicated to analyzing impact of arts and culture in US cities. 
+
+### Analyses
+1.	Calculate the distance and travel times from/to an art/culture institute by building a public transit network dataset from GTFS data and street centerlines, downloaded from data.wprdc.org.
+   a.	Creating a network dataset was not something covered in class. I followed the tutorial on pro.arcgis.com to complete this step. 
+2.	Create service area rings using arts organizations as facilities. Use this to predict estimated arrival time by public transit. 
+3.	Determine correlation between race, income, and accessibility  
+   a.	Spatially join attendance census tracts to service area. Use attendance rate and frequency of attendance to determine if the two variables are correlated.
+   b.	Spatially join race and income layer to the network layer. Use Black/AfroAm population ratio and median income to arts & culture organization arrival times to determine if there is a correlation. 
 
