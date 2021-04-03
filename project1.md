@@ -17,14 +17,14 @@ This project consisted of two parts: building the map and performing analyses.
 1.	Create a map of Pittsburgh in GIS that includes the following layers:&nbsp;  
 a.	Pittsburgh neighborhoods, [table of census tracts that make up each neighborhood](https://www.ucsur.pitt.edu/files/center/qol/2018/Pittsburgh%20Regional%20QOL%20Survey%20Full%20Report_2018.pdf) obtained from University of Pittsburgh University Center for Urban and Social Research (USCSR)&nbsp;  
 b. [Pittsburgh demographics (race and income) by census tract](https://data.census.gov/cedsci/table?q=Income%20and%20Earnings&t=Income%20and%20Poverty&g=0500000US42003,42003.140000&tid=ACSST1Y2019.S1901&hidePreview=true), obtained from census.gov&nbsp;  
-c.	[Pittsburgh arts & culture attendance rates, by census tract](https://www.ucsur.pitt.edu/files/center/qol/2018/Pittsburgh%20Regional%20QOL%20Survey%20Full%20Report_2018.pdf).&nbsp;  
+c.	[Pittsburgh arts & culture attendance rates, by census tract](https://www.ucsur.pitt.edu/quality_of_life_2018.php)).&nbsp;  
 &nbsp;  &nbsp;  i.	Information provided by USCSR from their 2018 Pittsburgh Quality of Life survey. The dataset was provided as a set of responses to all questions in the survey. I created a dataset for use in the project by using the responses to the questions: “During the past year, about how many times have you visited a local museum or gallery or attended an art or cultural event, such as a play, concert, festival, reading or film? Responses were recorded in the following ranges: None, 1-2, 3-5, 6-10, 11-20, 21 or more. The final table contained 1851 from 365 census tracts in Allegheny County. I calculated and added fields Average Attendance Rate Per Tract and Number of Positive Responses per Tract
 
-2.	Create a network dataset and service area using publicly available information on Pittsburgh’s transit General Transit Feed Specification (GTFS), data obtained from portauthority.gov&nbsp;  
-a.	Facilities used in the service area are Pittsburgh’s arts and cultural organization. A list of these was provided by SMU Data Arts, an organization dedicated to analyzing impact of arts and culture in US cities. 
+2.	Create a network dataset and service area using publicly available information on Pittsburgh’s transit [General Transit Feed Specification](https://www.portauthority.org/business-center/developer-resources/) (GTFS), data obtained from portauthoritgov&nbsp;  
+a.	Facilities used in the service area are Pittsburgh)’s arts and cultural organization. A list of these was provided by SMU Data Arts, an organization dedicated to analyzing impact of arts and culture in US cities. 
 
 ### Analyses
-1.	Calculate the distance and travel times from/to an art/culture institute by building a public transit network dataset from GTFS data and street centerlines, downloaded from data.wprdc.org.&nbsp;  
+1.	Calculate the distance and travel times from/to an art/culture institute by building a public transit network dataset from GTFS data and [street centerlines](https://data.wprdc.org/dataset/allegheny-county-addressing-street-centerlines), downloaded from data.wprdc.org.&nbsp;  
 a. Creating a network dataset was not something covered in class. I followed the [tutorial](https://pro.arcgis.com/en/pro-app/help/analysis/networks/create-and-use-a-network-dataset-with-public-transit-data.htm) on pro.arcgis.com to complete this step. 
 2.	Create service area rings using arts organizations as facilities. Use this to predict estimated arrival time by public transit.&nbsp;  
 3.	Determine correlation between race, income, and accessibility&nbsp;  
