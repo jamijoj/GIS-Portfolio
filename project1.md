@@ -71,16 +71,16 @@ b.	Spatially join race and income layer to the network layer. Use Black/AfroAm p
 
 ### Question 1: Does time it takes to get to an arts locale by public transit impact attendance?&nbsp;  
 ![image](https://user-images.githubusercontent.com/73584997/113475753-787c5300-9445-11eb-9eca-cd7cbed6f530.png)&nbsp;  
-My first observation was that all of the arts organizations seemed to be generally clustered on the east side of Pittsburgh. Because of this, I expected that the attendance rate would also be much higher in that region.
+My first observation was that all of the arts organizations seemed to be generally clustered on the east side of Pittsburgh. Because of this, I expected that the attendance rate would also be much higher in that region.&nbsp;  
 
 ![image](https://user-images.githubusercontent.com/73584997/113475757-7ca87080-9445-11eb-8ef7-2f3f3159abec.png)&nbsp;  
-A visual comparison of the attendance rate (represented by graduated symbols) and location of arts orgs did not yield any clear results, so I decided to do a simple “Select by Attribute” to see where average attendance rate was 10 times per year or higher.
+A visual comparison of the attendance rate (represented by graduated symbols) and location of arts orgs did not yield any clear results, so I decided to do a simple “Select by Attribute” to see where average attendance rate was 10 times per year or higher.&nbsp;  
 
 ![image](https://user-images.githubusercontent.com/73584997/113475762-816d2480-9445-11eb-9198-8342ddfc65c7.png)&nbsp;  
 The results of the “Select by Attribute” where average attendance rate was 10 times per year or higher yielded a clearer correlation. The attendance rate is higher in the general vicinity of the cluster of arts organizations, which is unsurprising. It makes sense that those who are closer will attend more often. 
 
 Since my main concern was finding out how accessibility by public transit affects attendance, I used the Service Area I created from the Pittsburgh Public Transit system and ran it with a cutoff of 5, 10, 20, 40, and 60 minutes to find out what attendance was like for those who lived within those travel times. I spatially joined the TractsAttendanceCentroids layer to the service area.&nbsp;   
-![Layout1](https://user-images.githubusercontent.com/73584997/113475929-2be54780-9446-11eb-834f-8daaa455a116.jpg)
+![Layout1](https://user-images.githubusercontent.com/73584997/113475929-2be54780-9446-11eb-834f-8daaa455a116.jpg)&nbsp;  
 This showed that almost every neighborhood in Pittsburgh had accessibility to an arts organization within at least 60 minutes. The exceptions were the neighborhoods Hays and New Homestead.
 
 I examined the attribute table and ran the Table to Excel tool to show the results. The last row, 40 to 60 minutes, only has 4 responses, meaning the survey most likely received less and less responses the farther from the center of Pittsburgh. The row can be disregarded as there were only 4 responses, so it is not representative. 
@@ -100,7 +100,8 @@ I then calculated the rate of attendees by category of how many times a year the
 
 My next question had to do with the correlation between race and income and accessibility to arts organizations. 
 
-I answered this question by joining the attribute table from the Race/Income Tract centroids to the TractAttendance centroids. With the Service Area cutoff still set to 10,20,30, and 40 minutes, I did a spatial join once again of the tract centroids to the service areas.
+I answered this question by joining the attribute table from the Race/Income Tract centroids to the TractAttendance centroids. With the Service Area cutoff still set to 10,20,30, and 40 minutes, I did a spatial join once again of the tract centroids to the service areas.&nbsp;  
+
 
 ![Layout2](https://user-images.githubusercontent.com/73584997/113475930-2daf0b00-9446-11eb-934b-9e337c08ed4f.jpg)
 From looking at the map, it appears that there could be a correlation between distance and Black/Afro American populations. Areas that are more heavily Black/Afro American appear to be slightly farther from arts organizations by public transit. I also noticed there are some neighborhoods that fall outside of the service areas: Chartiers City, Banksville, Lincoln Place, and Homestead, however, these neighborhoods do not appear to have a notable Black/AfroAm population ratio.&nbsp;  
@@ -112,7 +113,7 @@ Looking at the map with Household Median Income symbolized using graduated color
 
 I looked at the attribute table to get a clearer understanding of the data and exported it to Excel for formatting.&nbsp;  
 ![image](https://user-images.githubusercontent.com/73584997/113476041-c3e33100-9446-11eb-9ce9-156ac95d4294.png)&nbsp;  
-This shows that the population percentage of Black/AfroAmericans is highest in the 10-20 and 30-40 minute service areas. It is lowest in the 0-10 minute service area. There is also a higher mean income in the 0-10 minute service area, though the median income is around 50k for all service areas except the 10-20 minute service area, which is only about 40K. 
+This shows that the population percentage of Black/AfroAmericans is highest in the 10-20 and 30-40 minute service areas. It is lowest in the 0-10 minute service area. There is also a higher mean income in the 0-10 minute service area, though the median income is around 50k for all service areas except the 10-20 minute service area, which is only about 40K.&nbsp;   
 
 ![image](https://user-images.githubusercontent.com/73584997/113476053-d6f60100-9446-11eb-8ef7-1360331a94c8.png)&nbsp;  
 Comparing the race and income table with the attendance table, the service area from 0 to 10 minutes by public transit has the highest attendance rate, the lowest Black/AfroAm ratio, and the highest mean HH income. 
