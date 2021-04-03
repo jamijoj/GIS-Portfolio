@@ -122,6 +122,81 @@ This shows that the population percentage of Black/AfroAmericans is highest in t
 Comparing the race and income table with the attendance table, the service area from 0 to 10 minutes by public transit has the highest attendance rate, the lowest Black/AfroAm ratio, and the highest mean HH income. 
 
 
+## Findings and Future Work
 
+The aim of this project was to determine correlation between arts attendance, public transit, Black/AfroAm race, and income through geospatial analysis. Initial observations showed that people who were closer to public transit visited more often. The analyses also revealed that in the service area 0 to 10 minutes from an arts institute, the population is less Black/AfroAm, has a higher mean income, and has a higher attendance rate. The service areas after 10 minutes dropped almost uniformly in attendance rate and the Black/Afro American population increased as a whole.
+
+Though there is some correlation between the variables, after the 0 -10 minute service area the relationship between the variables is no longer meaningful. There is not enough evidence to definitively say that the relationship between the variables is causal and that poor access to arts and culture organizations on public transit negatively impacts attendance of Black/African American or low-income households. However, it does appear that for those who attend arts organizations, distance by public transit affects how often they will attend – those who are closer will visit more frequently.
+
+
+This project yielded some interesting findings. One that I think is worth researching more in future is the initial observation that most of the arts and cultural organizations are clustered on the east side of Pittsburgh. This is most likely the heart of Pittsburgh’s cultural district, specifically created to generate money for the city through local and non-local tourism. It could be useful to use the Pittsburgh public transit network dataset to calculate the how difficult and/or costly it is to traverse the city of Pittsburgh on public transit as a tourist would. The results of such a study could help city planners make decisions about if shuttles or additional bus lines are needed. 
+
+## Data Sources
+
+Allegheny county zip codes:
+●	https://catalog.data.gov/dataset/allegheny-county-zip-code-boundaries-9a066
+
+Allegheny county census tracts:
+●	https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2010&layergroup=Census+Tracts
+
+Allegheny county street centerlines
+●	https://data.wprdc.org/dataset/allegheny-county-addressing-street-centerlines
+
+ArcGIS public transit network dataset tutorial:
+●	https://pro.arcgis.com/en/pro-app/help/analysis/networks/create-and-use-a-network-dataset-with-public-transit-data.htm
+
+Pittsburgh neighborhoods:
+●	https://ucsur.pitt.edu/files/census/UCSUR_SF1_NeighborhoodProfiles_July2011.pdf
+
+Pittsburgh demographic information (race and income)
+●	Income (by census tract): https://data.census.gov/cedsci/table?q=Income%20and%20Earnings&t=Income%20and%20Poverty&g=0500000US42003,42003.140000&tid=ACSST1Y2019.S1901&hidePreview=true
+●	Race (by census tract):
+https://data.census.gov/cedsci/table?q=race&t=Income%20and%20Poverty&g=0500000US42003,42003.140000&tid=ACSDT1Y2019.B02001&hidePreview=false
+
+Pittsburgh arts & culture attendance data: 
+●	Attendance data provided by University of Pittsburgh University Center for Urban and Social Research 2018 Quality of Life Survey (https://www.ucsur.pitt.edu/quality_of_life_2018.php)
+
+Pittsburgh arts & culture organizations
+●	List of arts and culture organizations provided by SMU data arts (https://www.culturaldata.org/)
+
+Pittsburgh GTFS data:
+●	https://www.portauthority.org/business-center/developer-resources/
+
+
+## References
+
+“Create and use a network dataset with public transit data.” Pro.ArcGIS.com. Accessed 1 December 2020. 
+https://pro.arcgis.com/en/pro-app/help/analysis/networks/create-and-use-a-network-dataset-with-
+public-transit-data.htm)
+
+Gorr, Wilpen L. and Kristen S. Kurland. Pittsburgh Neighborhoods. November 30, 2017. Found in GIS Tutorial for 
+ArcGIS Pro: A Platform Workbook, Tutorial 5-3. Redlands, California: Esri Press, 2017.
+
+Greater Pittsburgh Arts Council. 2020 Greater Pittsburgh Culture Counts Technical Report. Pittsburgh, 2020. 
+Accessed November 2020.  http://www.pittsburghartscouncil.org/storage/documents/Research/
+Culture_Counts-2020-Technical_Report.pdf
+
+SMU Data Arts. Data, resources, and insights for the Arts. https://www.culturaldata.org/.
+
+U.S. Census Bureau, 2019 American Community Survey. Income in the Past 12 Months (in 2019 Inflation-Adjusted 
+Dollars). Distributed by Data.census.gov. https://data.census.gov/cedsci/table?q=Income%20and%20
+Earnings&t=Income%20and%20Poverty&g=0500000US42003,42003.140000&tid=ACSST1Y2019.S1901&hidePreview=true
+
+U.S. Census Bureau, 2019 American Community Survey. Race. Distributed by Data.census.gov. 
+https://data.census.gov/cedsci/table?q=race&t=Income%20and%20Poverty&g=0500000US42003,42003.140000&tid=ACSDT1Y2019.B02001&hidePreview=true
+
+University of Pittsburgh University Center for Social and Urban Research. The Pittsburgh Regional Quality of Life 
+Survey, Pittsburgh, December 2018. Accessed November 2020.  https://www.ucsur.pitt.edu/files/center
+/qol/2018/Pittsburgh%20Regional%20QOL%20Survey%20Full%20Report_2018.pdf.
+
+Western PA Regional Data Center.  2010 Census Block Groups. May 23, 2018. Distributed by Western Pennsylvania 
+Regional Data Center. https://data.wprdc.org/dataset/2010-census-block-groups.
+
+Western PA Regional Data Center. Allegheny County Zip Code Boundaries. February 28, 2018. Distributed by 
+Data.gov. https://catalog.data.gov/dataset/allegheny-county-zip-code-boundaries-9a066.
+
+Western PA Regional Data Center. Port Authority of Allegheny County Transit Stops. October 31, 2019. Distributed
+by Western Pennsylvania Regional Data Center. https://data.wprdc.org/dataset/port-authority-
+of-allegheny-county-transit-stops.
 
 
