@@ -20,23 +20,23 @@ b. [Pittsburgh demographics (race and income) by census tract](https://data.cens
 c.	[Pittsburgh arts & culture attendance rates, by census tract](https://www.ucsur.pitt.edu/quality_of_life_2018.php)).&nbsp;  
 &nbsp;  &nbsp;  i.	Information provided by USCSR from their 2018 Pittsburgh Quality of Life survey. The dataset was provided as a set of responses to all questions in the survey. I created a dataset for use in the project by using the responses to the questions: “During the past year, about how many times have you visited a local museum or gallery or attended an art or cultural event, such as a play, concert, festival, reading or film? Responses were recorded in the following ranges: None, 1-2, 3-5, 6-10, 11-20, 21 or more. The final table contained 1851 from 365 census tracts in Allegheny County. I calculated and added fields Average Attendance Rate Per Tract and Number of Positive Responses per Tract
 
-2.	Create a network dataset and service area using publicly available information on Pittsburgh’s transit [General Transit Feed Specification](https://www.portauthority.org/business-center/developer-resources/) (GTFS), data obtained from portauthoritgov&nbsp;  
+2.	Create a network dataset and service area using publicly available information on Pittsburgh’s transit [General Transit Feed Specification](https://www.portauthority.org/business-center/developer-resources/) (GTFS), data obtained from portauthority.gov&nbsp;  
 a.	Facilities used in the service area are Pittsburgh)’s arts and cultural organization. A list of these was provided by SMU Data Arts, an organization dedicated to analyzing impact of arts and culture in US cities. 
 
 ### Analyses
 1.	Calculate the distance and travel times from/to an art/culture institute by building a public transit network dataset from GTFS data and [street centerlines](https://data.wprdc.org/dataset/allegheny-county-addressing-street-centerlines), downloaded from data.wprdc.org.&nbsp;  
-a. Creating a network dataset was not something covered in class. I followed the [tutorial](https://pro.arcgis.com/en/pro-app/help/analysis/networks/create-and-use-a-network-dataset-with-public-transit-data.htm) on pro.arcgis.com to complete this step. 
+&nbsp;  a. Creating a network dataset was not something covered in class. I followed the [tutorial](https://pro.arcgis.com/en/pro-app/help/analysis/networks/create-and-use-a-network-dataset-with-public-transit-data.htm) on pro.arcgis.com to complete this step.&nbsp;   
 2.	Create service area rings using arts organizations as facilities. Use this to predict estimated arrival time by public transit.&nbsp;  
 3.	Determine correlation between race, income, and accessibility&nbsp;  
-a.	Spatially join attendance census tracts to service area. Use attendance rate and frequency of attendance to determine if the two variables are correlated.&nbsp;  
-b.	Spatially join race and income layer to the network layer. Use Black/AfroAm population ratio and median income to arts & culture organization arrival times to determine if there is a correlation. 
+&nbsp;  a.	Spatially join attendance census tracts to service area. Use attendance rate and frequency of attendance to determine if the two variables are correlated.&nbsp;  
+&nbsp;  b.	Spatially join race and income layer to the network layer. Use Black/AfroAm population ratio and median income to arts & culture organization arrival times to determine if there is a correlation. 
 
 ## Process Log
 ### Create Race and Income tracts and tract centroids based off census tract shapefile, and census race and income info &nbsp;  
 1.	From data.wprdc.org download Allegheny census tracts shapefile, from ucsur.pitt.edu download Pittsburgh neighborhoods by census tract table, and from data.census.gov download Allegheny County race and income tables&nbsp;  
 2.	Add Allegheny census tracts&nbsp;  
 3.	Add race and household income info&nbsp;  
-&nbsp;  a.	Clean data
+&nbsp;  a.	Clean data&nbsp;  
 &nbsp;  &nbsp;  i.	Race data: Remove all columns except total population and race categories and extract Tract ID numbers from Census Name column&nbsp;  
 &nbsp;  &nbsp;  ii.	Household income data: Remove all columns except those with GEO_ID, Census Tract Name, and Household data. Extract Tract ID numbers from Census Name column&nbsp;  
 &nbsp;  b.	Table join race and income to Allegheny County Census Tract based on TractID&nbsp;  
