@@ -19,3 +19,5 @@ Feel free to look through these projects I've done for my GIS courses.
 
  - [Building and deploying a custom Google Map for a non-profit organization](assignment1.md)
  - [Analysis of Lack of Transit Access as a Factor to Arts & Culture Low Attendance Rates of Black/African American and Low-Income Communities in Pittsburgh](project1.md)
+
+### Check out my Data Visualization Portfolio [here]( https://jamijoj.github.io/jamila-portfolio/)
