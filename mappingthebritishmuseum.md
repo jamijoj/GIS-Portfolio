@@ -57,9 +57,8 @@ I used the Geocode Address tool with Esri’s World Map Locator to geocode the �
 <img width="500" alt="Image1" src="https://user-images.githubusercontent.com/73584997/119650719-237c0e00-bdf2-11eb-9317-3105a47120cb.png">
 *Figure 1: Locations of British Museum objects geocoded* 
 I noticed a high number of objects from the US (highlighted in blue), which seemed odd to me since the British museum is not known for having a large Indigenous American or North American collection. I highlighted these to explore them further and realized that the list of addresses I built from the database contained archaic place names like Naukratis, Pharae, Cleonae, Thebes, Marathon, and others. The geocoder matched these places to cities in the US with the same names. There were also a number of unmatched rows locations that had not been recognized at all. Using the Rematch Address Tool, I rematched all unmatched addresses. Next, I selected all rows by attribute to find objects that had been matched to the US. I manually went through the list and coded locations correctly.
-
-<img width="500" alt="Image2" src="https://user-images.githubusercontent.com/73584997/119650960-7229a800-bdf2-11eb-9ac1-e4211bc3b0d7.png">
-*Figure 2: Mismatched US addresses matched correctly*
+<br>    
+<img width="500" alt="Image2" src="https://user-images.githubusercontent.com/73584997/119650960-7229a800-bdf2-11eb-9ac1-e4211bc3b0d7.png">*Figure 2: Mismatched US addresses matched correctly*
 
 The results of this rematch (fig. 2) showed that there were still quite a few points in the US, but many mismatched points belonged in the Mediterranean region, because they were place names in ancient empires like the Roman, Greek, and Byantine empires.
 
@@ -70,8 +69,8 @@ Here is the final map with locations geocoded:
 *Figure 3: Object locations geocoded*
 
 This is a visual representation of where objects in the British collection come from. It’s not surprising that many objects have origins in different places in Britain. It’s interesting to see that India and the Mediterranean region are also highly represented. In Africa, places along the coastline seem to have a high representation in the collection. At first glance, it seems that most object origins were in Britain and India.  To be sure, I did a hot spot analysis using the Optimized Hot Spot Tool:
-<img width="300" alt="Image4" src="https://user-images.githubusercontent.com/73584997/119654696-ba4ac980-bdf6-11eb-9bfb-bd4b14258d21.png">
-<img width="300" alt="Image5" src="https://user-images.githubusercontent.com/73584997/119654705-bc148d00-bdf6-11eb-84e7-6598d4887f00.png">
+<img width="500" alt="Image4" src="https://user-images.githubusercontent.com/73584997/119654696-ba4ac980-bdf6-11eb-9bfb-bd4b14258d21.png">
+<img width="500" alt="Image5" src="https://user-images.githubusercontent.com/73584997/119654705-bc148d00-bdf6-11eb-84e7-6598d4887f00.png">
 
 
 
