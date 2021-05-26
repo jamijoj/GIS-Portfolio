@@ -80,7 +80,7 @@ The hotspot analysis showed that there was a meaningful cluster of locations in 
 
 <details>
 <summary>3a.2. Plot objects to as points to layer</summary>
-The next step was to plot the objects in the collection to the map by joining the rows to their corresponding geocoded locations. I imported the collections CSV into ArcGIS and did some basic exploratory analysis by creating charts from the collections data. The most common  object type is “print.”&nbsp;  
+The next step was to plot the objects in the collection to the map by joining the rows to their corresponding geocoded locations. I imported the collections CSV into ArcGIS and did some basic exploratory analysis by creating charts from the collections data.&nbsp;  
 <img width="500" alt="Image6" src="https://user-images.githubusercontent.com/73584997/119656879-39410180-bdf9-11eb-8c9f-6a05e71fc975.png">&nbsp;  
 *Figure 6: Objects aggregated by object type*&nbsp;  
   
