@@ -64,7 +64,7 @@ I noticed a high number of objects from the US (highlighted in blue), which seem
 
 The results of this rematch (fig. 2) showed that there were still quite a few points in the US, but many mismatched points belonged in the Mediterranean region, because they were place names in ancient empires like the Roman, Greek, and Byantine empires.
 
-The locator I used was the Esri World Locator, but I had to go through and manually recode addresses that were names of archaic cities. In future, datasets that have a lot of archaic names could be geocoded from a locator created using ancient city names and their modern equivalents. (This is an example)[https://pleiades.stoa.org/downloads] of such a dataset. 
+The locator I used was the Esri World Locator, but I had to go through and manually recode addresses that were names of archaic cities. In future, datasets that have a lot of archaic names could be geocoded from a locator created using ancient city names and their modern equivalents. [This is an example](https://pleiades.stoa.org/downloads) of such a dataset. 
 
 Here is the final map with locations geocoded:
 
