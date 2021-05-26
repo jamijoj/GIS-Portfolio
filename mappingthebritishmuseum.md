@@ -54,23 +54,25 @@ Instead of geocoding 600k + objects, I decided to make a list of all the locatio
 
 I used the Geocode Address tool with Esri’s World Map Locator to geocode the “Find spot” and “Production place” columns in the dataset. I geocoded with parameters set to look in all countries, with categories set to  “Populated Places” and “POI.” The results of the first geocode are here:
     <br>
-<img width="500" alt="Image1" src="https://user-images.githubusercontent.com/73584997/119650719-237c0e00-bdf2-11eb-9317-3105a47120cb.png">
+<img width="500" alt="Image1" src="https://user-images.githubusercontent.com/73584997/119650719-237c0e00-bdf2-11eb-9317-3105a47120cb.png">&nbsp;
 *Figure 1: Locations of British Museum objects geocoded* 
 I noticed a high number of objects from the US (highlighted in blue), which seemed odd to me since the British museum is not known for having a large Indigenous American or North American collection. I highlighted these to explore them further and realized that the list of addresses I built from the database contained archaic place names like Naukratis, Pharae, Cleonae, Thebes, Marathon, and others. The geocoder matched these places to cities in the US with the same names. There were also a number of unmatched rows locations that had not been recognized at all. Using the Rematch Address Tool, I rematched all unmatched addresses. Next, I selected all rows by attribute to find objects that had been matched to the US. I manually went through the list and coded locations correctly.
-<br>    
-<img width="500" alt="Image2" src="https://user-images.githubusercontent.com/73584997/119650960-7229a800-bdf2-11eb-9ac1-e4211bc3b0d7.png">*Figure 2: Mismatched US addresses matched correctly*
+    <br>    
+<img width="500" alt="Image2" src="https://user-images.githubusercontent.com/73584997/119650960-7229a800-bdf2-11eb-9ac1-e4211bc3b0d7.png">&nbsp;
+*Figure 2: Mismatched US addresses matched correctly*
 
 The results of this rematch (fig. 2) showed that there were still quite a few points in the US, but many mismatched points belonged in the Mediterranean region, because they were place names in ancient empires like the Roman, Greek, and Byantine empires.
 
 The locator I used was the Esri World Locator, but I had to go through and manually recode addresses that were names of archaic cities. In future, datasets that have a lot of archaic names could be geocoded from a locator created using ancient city names and their modern equivalents. [This is an example](https://pleiades.stoa.org/downloads) of such a dataset. 
 
 Here is the final map with locations geocoded:
-<img width="500" alt="Image3" src="https://user-images.githubusercontent.com/73584997/119654323-54f6d880-bdf6-11eb-86c5-dc332c44ce78.png">
+    <br>
+<img width="500" alt="Image3" src="https://user-images.githubusercontent.com/73584997/119654323-54f6d880-bdf6-11eb-86c5-dc332c44ce78.png">&nbsp;
 *Figure 3: Object locations geocoded*
 
 This is a visual representation of where objects in the British collection come from. It’s not surprising that many objects have origins in different places in Britain. It’s interesting to see that India and the Mediterranean region are also highly represented. In Africa, places along the coastline seem to have a high representation in the collection. At first glance, it seems that most object origins were in Britain and India.  To be sure, I did a hot spot analysis using the Optimized Hot Spot Tool:
-<img width="500" alt="Image4" src="https://user-images.githubusercontent.com/73584997/119654696-ba4ac980-bdf6-11eb-9bfb-bd4b14258d21.png">
-<img width="500" alt="Image5" src="https://user-images.githubusercontent.com/73584997/119654705-bc148d00-bdf6-11eb-84e7-6598d4887f00.png">
+<img width="500" alt="Image4" src="https://user-images.githubusercontent.com/73584997/119654696-ba4ac980-bdf6-11eb-9bfb-bd4b14258d21.png">&nbsp;
+<img width="500" alt="Image5" src="https://user-images.githubusercontent.com/73584997/119654705-bc148d00-bdf6-11eb-84e7-6598d4887f00.png">&nbsp;
 
 
 
