@@ -44,11 +44,8 @@ The cleaned dataset had approximately 857,445 rows (each corresponding to an obj
 
 <details>
 <summary>Step 3: Create map in ArcGIS with layer of British occupation by territory and layer of objects in the British visualized by location of origin and date of acquisition</summary> 
-  <br>
   <details>
   <summary>3a.1 Geocode</summary>
-    <br>
-    3a.1. Geocode
 The next step in the process was to geocode the objects based in location. The dataset had two location attributes, “Find spot” and “Production place.” The location information has been recorded inconsistently so some objects only have “Find spot,” noted, some only Production place, and some both. To approach this, I decided to geocode by the “Find spot” column first, which is most relevant to the purpose of this project then geocode anything without a “Find spot” by the “Production place” column, since it still reliably approximates the information of interest.
 
 To start, I used Python to concatenate the “Find spot” and “Production place” columns and drop all columns that had a null value in both. That got rid of objects without location information so could not be used for the project. This removed 254,582 objects. The resulting dataset was now 602,863 rows (objects).  
