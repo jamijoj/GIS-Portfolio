@@ -56,6 +56,7 @@ I used the Geocode Address tool with Esri’s World Map Locator to geocode the �
     <br>
 <img width="500" alt="Image1" src="https://user-images.githubusercontent.com/73584997/119650719-237c0e00-bdf2-11eb-9317-3105a47120cb.png">&nbsp;  
 *Figure 1: Locations of British Museum objects geocoded*&nbsp;  
+<br>
 I noticed a high number of objects from the US (highlighted in blue), which seemed odd to me since the British museum is not known for having a large Indigenous American or North American collection. I highlighted these to explore them further and realized that the list of addresses I built from the database contained archaic place names like Naukratis, Pharae, Cleonae, Thebes, Marathon, and others. The geocoder matched these places to cities in the US with the same names. There were also a number of unmatched rows locations that had not been recognized at all. Using the Rematch Address Tool, I rematched all unmatched addresses. Next, I selected all rows by attribute to find objects that had been matched to the US. I manually went through the list and coded locations correctly.
     <br>    
 <img width="500" alt="Image2" src="https://user-images.githubusercontent.com/73584997/119650960-7229a800-bdf2-11eb-9ac1-e4211bc3b0d7.png">&nbsp;  
@@ -73,6 +74,30 @@ Here is the final map with locations geocoded:
 This is a visual representation of where objects in the British collection come from. It’s not surprising that many objects have origins in different places in Britain. It’s interesting to see that India and the Mediterranean region are also highly represented. In Africa, places along the coastline seem to have a high representation in the collection. At first glance, it seems that most object origins were in Britain and India.  To be sure, I did a hot spot analysis using the Optimized Hot Spot Tool:&nbsp;  
 <img width="500" alt="Image4" src="https://user-images.githubusercontent.com/73584997/119654696-ba4ac980-bdf6-11eb-9bfb-bd4b14258d21.png">&nbsp;  
 <img width="500" alt="Image5" src="https://user-images.githubusercontent.com/73584997/119654705-bc148d00-bdf6-11eb-84e7-6598d4887f00.png">&nbsp;  
+*Figures 4 & 5: Hotspot analysis, zoomed to Britain*&nbsp;  
+The hotspot analysis showed that there was a meaningful cluster of locations in and around Britain.
+</details>
+
+  <details>
+  <summary>3a.2. Plot objects to as points to layer</summary>
+The next step was to plot the objects in the collection to the map by joining the rows to their corresponding geocoded locations. I imported the collections CSV into ArcGIS and did some basic exploratory analysis by creating charts from the collections data.
+<img width="500" alt="Image6" src="https://user-images.githubusercontent.com/73584997/119656879-39410180-bdf9-11eb-8c9f-6a05e71fc975.png">&nbsp;  
+*Figure 6: Objects aggregated by object type*&nbsp;  
+The most common  object type is “print.”
+<img width="500" alt="Image7" src="https://user-images.githubusercontent.com/73584997/119657065-73120800-bdf9-11eb-9448-287251b1fa63.png">&nbsp;  
+*Figure 7: Objects aggregated by date*&nbsp;  
+    
+There was a peak in acquiring objects around 1818. Collecting picked up in the mid-1800s and remained steady. There are also quite a few number of objects in the collection that do not have the date of acquisition included (57,183 rows with “0” in the acquisition date column).
+
+I then joined the collections data table to the geocoded locations layer. For this, I created a new field called “JoinLoc” that copied data from the “Find spot” column, but if null, would fill with the “Production place” field. I then executed a table join to create the new layer. 
+
+I ran another hotspot analysis to see if the results would be different since each point now corresponded to an object, not just a location, but the results were the same – the majority of objects were of British origin (fig. 8).
+<img width="500" alt="Image8" src="https://user-images.githubusercontent.com/73584997/119657452-eb78c900-bdf9-11eb-8b38-d462f05ed246.png">&nbsp;  
+*Figure 8: Hotspot analysis 2*&nbsp;  
+</details>
+
+
+ 
 
 
 
