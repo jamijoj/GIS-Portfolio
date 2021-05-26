@@ -100,8 +100,48 @@ I ran another hotspot analysis to see if the results would be different since ea
 *Figure 8: Hotspot analysis 2*&nbsp;  
 </details>
 
+<details>
+<summary>3b. Visualizing and analyzing collections temporal data</summary>
+I was interested in knowing when the museum collected its pieces from different places. I initially planned to use Tracking Analyst in this stage of the analysis, but Tracking Analyst is not offered with ArcGIS Pro. Instead I used ArcGIS built in temporal capabilities and several analysis tools. To start, I created a new field of dates. I copied “acquisition date.” Those without an acquisition date listed (over 57,000 rows) had a Null value. I then used the Convert Time Field tool to convert from str values to date. I added this column (Date_converted) into the layers properties as Time. This process removed all of the data with Null values for date, leaving 545,670 objects. This added in the dimension of time that I wanted to convey. I selected to display objects by 10 year intervals.
+<img width="500" alt="Image9" src="https://user-images.githubusercontent.com/73584997/119660054-ce91c500-bdfc-11eb-94bf-868d3610412e.gif">&nbsp;  
+*Figure 9:  Animation of all objects in 10 year intervals*&nbsp;  
 
- 
+These were the initial results (fig.9). Acquisition outside of Britain started early on and continued to increase with time.
+
+I wanted to see the amount of acquisition from each location, so I used the Frequency tool to aggregate the dataset by their coordinates and date.
+
+<img width="500" alt="Image10" src="https://user-images.githubusercontent.com/73584997/119660285-10bb0680-bdfd-11eb-966d-33e147d51877.gif">&nbsp;  
+*Figure 10: Animation of all objects in 10 year intervals, graduated symbology*&nbsp;  
+Aggregating by Frequency of objects (representing number of objects from location) tells a somewhat different story. The amount of objects taken from locations outside of Britain show that a large amount of objects were taken from what appears to be Nigeria, Japan, and India. The region near Britain is also very active.
+
+To get a closer look, I zoomed in on each region:
+![Africa](https://user-images.githubusercontent.com/73584997/119660502-55df3880-bdfd-11eb-9e80-fff1be720571.gif)
+*Figure 11: Animation of all objects in 10 year intervals, graduated symbology, in Africa*&nbsp;  
+Many objects in Africa were sourced from Nigeria, Egypt, Zimbabwe, and Malawi. 
+<br>
+![AsiaMiddleEast](https://user-images.githubusercontent.com/73584997/119660649-7f985f80-bdfd-11eb-98c7-dc25f6078f41.gif)
+*Figure 12: Animation of all objects in 10 year intervals, graduated symbology, in Asia and the Middle East*
+In Asia and the Middle East, China, India, Japan, the Levant, and Malaysia are notable.
+<br>
+
+![Europe](https://user-images.githubusercontent.com/73584997/119660758-98a11080-bdfd-11eb-83de-e98747395b67.gif)
+*Figure 13: Animation of all objects in 10 year intervals, graduated symbology, in Europe*
+In Europe, Britain, Italy, France, and Germany are notable. 
+![NorthAmerica](https://user-images.githubusercontent.com/73584997/119660829-ac4c7700-bdfd-11eb-9312-7c504023e9ec.gif)
+*Figure 14: Animation of all objects in 10 year intervals, graduated symbology, in North America*
+In North America, it looks like the majority of items were sourced from Mexico and the east coast of the US.
+<br>
+![SouthAmerica](https://user-images.githubusercontent.com/73584997/119660963-cdad6300-bdfd-11eb-865d-40414f180f67.gif)
+*Figure 15: Animation of all objects in 10 year intervals, graduated symbology, in South America*
+Comparatively few items came from South America. Those that did came from the Andean region. 
+![Oceania](https://user-images.githubusercontent.com/73584997/119661039-e1f16000-bdfd-11eb-9114-e3494c8d2009.gif)
+*Figure 16: Animation of all objects in 10 year intervals, graduated symbology, Oceania.*
+Many objects in Oceania were sourced from Australia, and there is an interesting and surprising number of objects sourced from Papua New Guinea. 
+
+I then sorted locations by number of objects per year and selected all those that had 1000 objects or more per year, which ended up being 74 place/year combinations. 
+
+
+
 
 
 
