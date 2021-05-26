@@ -78,13 +78,14 @@ This is a visual representation of where objects in the British collection come 
 The hotspot analysis showed that there was a meaningful cluster of locations in and around Britain.
 </details>
 
-  <details>
-  <summary>3a.2. Plot objects to as points to layer</summary>
+<details>
+<summary>3a.2. Plot objects to as points to layer</summary>
 The next step was to plot the objects in the collection to the map by joining the rows to their corresponding geocoded locations. I imported the collections CSV into ArcGIS and did some basic exploratory analysis by creating charts from the collections data.
 <img width="500" alt="Image6" src="https://user-images.githubusercontent.com/73584997/119656879-39410180-bdf9-11eb-8c9f-6a05e71fc975.png">&nbsp;  
 *Figure 6: Objects aggregated by object type*&nbsp;  
 The most common  object type is “print.”
-<img width="500" alt="Image7" src="https://user-images.githubusercontent.com/73584997/119657065-73120800-bdf9-11eb-9448-287251b1fa63.png">&nbsp;  
+  
+<img width="650" alt="Image7" src="https://user-images.githubusercontent.com/73584997/119657065-73120800-bdf9-11eb-9448-287251b1fa63.png">&nbsp;  
 *Figure 7: Objects aggregated by date*&nbsp;  
     
 There was a peak in acquiring objects around 1818. Collecting picked up in the mid-1800s and remained steady. There are also quite a few number of objects in the collection that do not have the date of acquisition included (57,183 rows with “0” in the acquisition date column).
