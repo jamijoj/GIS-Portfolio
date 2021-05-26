@@ -1,10 +1,10 @@
 # Using ArcGIS Insights to investigate the DEA's pain pill database
 
 
-### Screenshot
+#### Screenshot
 <img width="1000" alt="Mapscreenshot" src="https://user-images.githubusercontent.com/73584997/113980331-55222100-9814-11eb-8992-340b2ecbe98a.png">
 
-### Interactive map
+#### Interactive map
 <iframe src="https://insights.arcgis.com/#/embed/5f0bb48ee02a4e6492412d7fb5581147" width="1000" height="590" frameborder="0"></iframe>
 
 This map is the result of an exericse we did for class using ArcGIS Insights, Esri's answer to Tableau. The project asked us to examine the Drug Enforcement Administration's pain pill database, which contains information on all pain pills sold in the US, including who sells them and where the pills go. [This Washington Post article](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/) has a section to easily sort the database by county and retrieve a corresponding dataset. I sorted for Mingo County in West Virginia and downloaded the dataset, which I then imported into a new workbook on ArcGIS Insights Desktop.
