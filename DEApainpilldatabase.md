@@ -1,5 +1,7 @@
 # Using ArcGIS Insights to investigate the DEA's pain pill database
 
+<iframe src="https://insights.arcgis.com/#/embed/5f0bb48ee02a4e6492412d7fb5581147" width="1360" height="590" frameborder="0"></iframe>
+
 <img width="1000" alt="Mapscreenshot" src="https://user-images.githubusercontent.com/73584997/113980331-55222100-9814-11eb-8992-340b2ecbe98a.png">
 
 
