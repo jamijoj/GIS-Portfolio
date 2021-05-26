@@ -42,3 +42,8 @@ The cleaned dataset had approximately 857,445 rows (each corresponding to an obj
  - *Location:* Says whether the object is on display and, if so, where in the museum it is
 </details>
 
+<details>
+<summary>Step 3: Create map in ArcGIS with layer of British occupation by territory and layer of objects in the British visualized by location of origin and date of acquisition</summary> 
+  <summary>3a.1 Geocode</summary>
+  
+<br>
