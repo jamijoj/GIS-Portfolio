@@ -84,7 +84,6 @@ The next step was to plot the objects in the collection to the map by joining th
 <img width="500" alt="Image6" src="https://user-images.githubusercontent.com/73584997/119656879-39410180-bdf9-11eb-8c9f-6a05e71fc975.png">&nbsp;  
 
 *Figure 6: Objects aggregated by object type*&nbsp;  
-<br>
 The most common  object type is “print.”
   
 <img width="650" alt="Image7" src="https://user-images.githubusercontent.com/73584997/119657065-73120800-bdf9-11eb-9448-287251b1fa63.png">&nbsp;  
