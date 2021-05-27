@@ -111,7 +111,7 @@ I ran another hotspot analysis to see if the results would be different since ea
 I was interested in knowing when the museum collected its pieces from different places. I initially planned to use Tracking Analyst in this stage of the analysis, but Tracking Analyst is not offered with ArcGIS Pro. Instead I used ArcGIS built in temporal capabilities and several analysis tools. To start, I created a new field of dates. I copied “acquisition date.” Those without an acquisition date listed (over 57,000 rows) had a Null value. I then used the Convert Time Field tool to convert from str values to date. I added this column (Date_converted) into the layers properties as Time. This process removed all of the data with Null values for date, leaving 545,670 objects. This added in the dimension of time that I wanted to convey. I selected to display objects by 10 year intervals.&nbsp;  
   
 ![TimeAnimation](https://user-images.githubusercontent.com/73584997/119771303-78b82e00-be8b-11eb-885d-b9f7dc297f05.gif)
-###### *Figure 9:  Animation of all objects in 10 year intervals*&nbsp;  
+*Figure 9:  Animation of all objects in 10 year intervals*&nbsp;  
 These were the initial results (fig.9). Acquisition outside of Britain started early on and continued to increase with time.
 
 I wanted to see the amount of acquisition from each location, so I used the Frequency tool to aggregate the dataset by their coordinates and date.&nbsp;  
@@ -123,7 +123,6 @@ Aggregating by Frequency of objects (representing number of objects from locatio
 To get a closer look, I zoomed in on each region:&nbsp;  
 ![Africa](https://user-images.githubusercontent.com/73584997/119768945-8ff51c80-be87-11eb-9154-8256108d69dd.gif)
 *Figure 11: Animation of all objects in 10 year intervals, graduated symbology, in Africa*&nbsp;  
-<br>
 Many objects in Africa were sourced from Nigeria, Egypt, Zimbabwe, and Malawi. 
 <br>
 ![AsiaMiddleEast](https://user-images.githubusercontent.com/73584997/119768982-9edbcf00-be87-11eb-96d2-abd79400b0a9.gif)  
@@ -143,9 +142,9 @@ In North America, it looks like the majority of items were sourced from Mexico a
 Comparatively few items came from South America. Those that did came from the Andean region. 
 <br>
 ![Oceania](https://user-images.githubusercontent.com/73584997/119661039-e1f16000-bdfd-11eb-9114-e3494c8d2009.gif)
-*Figure 16: Animation of all objects in 10 year intervals, graduated symbology, Oceania.*
+*Figure 16: Animation of all objects in 10 year intervals, graduated symbology, Oceania.*&nbsp;  
 Many objects in Oceania were sourced from Australia, and there is an interesting and surprising number of objects sourced from Papua New Guinea. 
-
+<br>
 I then sorted locations by number of objects per year and selected all those that had 1000 objects or more per year, which ended up being 74 place/year combinations. 
 
 
