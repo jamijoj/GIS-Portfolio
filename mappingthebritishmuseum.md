@@ -113,9 +113,8 @@ I was interested in knowing when the museum collected its pieces from different 
 *Figure 9:  Animation of all objects in 10 year intervals*&nbsp;  
 These were the initial results (fig.9). Acquisition outside of Britain started early on and continued to increase with time.
 
-I wanted to see the amount of acquisition from each location, so I used the Frequency tool to aggregate the dataset by their coordinates and date.
-
-![TimeGradSymbolAnimation](https://user-images.githubusercontent.com/73584997/119766390-ea3fae80-be82-11eb-9750-586aa9746131.gif)&nbsp;  
+I wanted to see the amount of acquisition from each location, so I used the Frequency tool to aggregate the dataset by their coordinates and date.&nbsp;  
+![TimeGradSymbolAnimation](https://user-images.githubusercontent.com/73584997/119766390-ea3fae80-be82-11eb-9750-586aa9746131.gif)
 *Figure 10: Animation of all objects in 10 year intervals, graduated symbology*&nbsp;  
 <br> 
 Aggregating by Frequency of objects (representing number of objects from location) tells a somewhat different story. The amount of objects taken from locations outside of Britain show that a large amount of objects were taken from what appears to be Nigeria, Japan, and India. The region near Britain is also very active.
