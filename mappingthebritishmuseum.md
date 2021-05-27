@@ -123,7 +123,7 @@ Aggregating by Frequency of objects (representing number of objects from locatio
 To get a closer look, I zoomed in on each region:&nbsp;  
 ![Africa](https://user-images.githubusercontent.com/73584997/119768945-8ff51c80-be87-11eb-9154-8256108d69dd.gif)
 *Figure 11: Animation of all objects in 10 year intervals, graduated symbology, in Africa*&nbsp;  
-Many objects in Africa were sourced from Nigeria, Egypt, Zimbabwe, and Malawi. 
+Many objects in Africa were sourced from Nigeria, Egypt, Zimbabwe, and Malawi.&nbsp;   
 <br>
 ![AsiaMiddleEast](https://user-images.githubusercontent.com/73584997/119768982-9edbcf00-be87-11eb-96d2-abd79400b0a9.gif)  
 *Figure 12: Animation of all objects in 10 year intervals, graduated symbology, in Asia and the Middle East*&nbsp;  
