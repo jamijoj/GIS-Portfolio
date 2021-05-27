@@ -111,7 +111,7 @@ I ran another hotspot analysis to see if the results would be different since ea
 I was interested in knowing when the museum collected its pieces from different places. I initially planned to use Tracking Analyst in this stage of the analysis, but Tracking Analyst is not offered with ArcGIS Pro. Instead I used ArcGIS built in temporal capabilities and several analysis tools. To start, I created a new field of dates. I copied “acquisition date.” Those without an acquisition date listed (over 57,000 rows) had a Null value. I then used the Convert Time Field tool to convert from str values to date. I added this column (Date_converted) into the layers properties as Time. This process removed all of the data with Null values for date, leaving 545,670 objects. This added in the dimension of time that I wanted to convey. I selected to display objects by 10 year intervals.&nbsp;  
   
 ![TimeAnimation](https://user-images.githubusercontent.com/73584997/119771303-78b82e00-be8b-11eb-885d-b9f7dc297f05.gif)
-*Figure 9:  Animation of all objects in 10 year intervals*&nbsp;  
+###### *Figure 9:  Animation of all objects in 10 year intervals*&nbsp;  
 These were the initial results (fig.9). Acquisition outside of Britain started early on and continued to increase with time.
 
 I wanted to see the amount of acquisition from each location, so I used the Frequency tool to aggregate the dataset by their coordinates and date.&nbsp;  
