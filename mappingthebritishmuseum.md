@@ -127,23 +127,23 @@ Many objects in Africa were sourced from Nigeria, Egypt, Zimbabwe, and Malawi.&n
 <br>
 ![AsiaMiddleEast](https://user-images.githubusercontent.com/73584997/119768982-9edbcf00-be87-11eb-96d2-abd79400b0a9.gif)  
 *Figure 12: Animation of all objects in 10 year intervals, graduated symbology, in Asia and the Middle East*&nbsp;  
-In Asia and the Middle East, China, India, Japan, the Levant, and Malaysia are notable.
+In Asia and the Middle East, China, India, Japan, the Levant, and Malaysia are notable.&nbsp;  
 <br>
 ![Europe](https://user-images.githubusercontent.com/73584997/119769005-aa2efa80-be87-11eb-8d96-4e7d3a23e6fb.gif)
 *Figure 13: Animation of all objects in 10 year intervals, graduated symbology, in Europe*&nbsp;  
-In Europe, Britain, Italy, France, and Germany are notable. 
+In Europe, Britain, Italy, France, and Germany are notable. &nbsp;  
 <br>
 ![NorthAmerica](https://user-images.githubusercontent.com/73584997/119769049-bb780700-be87-11eb-91d1-86ef1821cb5b.gif)
 *Figure 14: Animation of all objects in 10 year intervals, graduated symbology, in North America*&nbsp;  
-In North America, it looks like the majority of items were sourced from Mexico and the east coast of the US.
+In North America, it looks like the majority of items were sourced from Mexico and the east coast of the US.&nbsp;  
 <br>
 ![SouthAmerica](https://user-images.githubusercontent.com/73584997/119660963-cdad6300-bdfd-11eb-865d-40414f180f67.gif)
 *Figure 15: Animation of all objects in 10 year intervals, graduated symbology, in South America*&nbsp;  
-Comparatively few items came from South America. Those that did came from the Andean region. 
+Comparatively few items came from South America. Those that did came from the Andean region.&nbsp;   
 <br>
 ![Oceania](https://user-images.githubusercontent.com/73584997/119661039-e1f16000-bdfd-11eb-9114-e3494c8d2009.gif)
 *Figure 16: Animation of all objects in 10 year intervals, graduated symbology, Oceania.*&nbsp;  
-Many objects in Oceania were sourced from Australia, and there is an interesting and surprising number of objects sourced from Papua New Guinea. 
+Many objects in Oceania were sourced from Australia, and there is an interesting and surprising number of objects sourced from Papua New Guinea.&nbsp;   
 <br>
 I then sorted locations by number of objects per year and selected all those that had 1000 objects or more per year, which ended up being 74 place/year combinations. 
 
