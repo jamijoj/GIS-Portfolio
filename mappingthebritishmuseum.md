@@ -2,6 +2,10 @@
 
 ![FinalMap3](https://user-images.githubusercontent.com/73584997/119645151-b796a700-bdeb-11eb-9438-0d009dc1e202.png)
 
+![ColonialBritishObjects](https://user-images.githubusercontent.com/73584997/119765961-2d4d5200-be82-11eb-975f-f93adbeccb1a.gif)
+
+#insert dashboard
+
 ## Background
 <details>
 <summary>Read more</summary> 
@@ -79,7 +83,8 @@ The hotspot analysis showed that there was a meaningful cluster of locations in 
 </details>
 
 <details>
-<summary>3a.2. Plot objects to as points to layer</summary>
+<summary>3a.2. Plot objects to as points to layer</summary
+  <br>
 The next step was to plot the objects in the collection to the map by joining the rows to their corresponding geocoded locations. I imported the collections CSV into ArcGIS and did some basic exploratory analysis by creating charts from the collections data.&nbsp;  
 <img width="500" alt="Image6" src="https://user-images.githubusercontent.com/73584997/119656879-39410180-bdf9-11eb-8c9f-6a05e71fc975.png">&nbsp;  
   
@@ -104,32 +109,34 @@ I ran another hotspot analysis to see if the results would be different since ea
 <summary>3b. Visualizing and analyzing collections temporal data</summary>
 <br>
 I was interested in knowing when the museum collected its pieces from different places. I initially planned to use Tracking Analyst in this stage of the analysis, but Tracking Analyst is not offered with ArcGIS Pro. Instead I used ArcGIS built in temporal capabilities and several analysis tools. To start, I created a new field of dates. I copied “acquisition date.” Those without an acquisition date listed (over 57,000 rows) had a Null value. I then used the Convert Time Field tool to convert from str values to date. I added this column (Date_converted) into the layers properties as Time. This process removed all of the data with Null values for date, leaving 545,670 objects. This added in the dimension of time that I wanted to convey. I selected to display objects by 10 year intervals.
-<img width="500" alt="Image9" src="https://user-images.githubusercontent.com/73584997/119660054-ce91c500-bdfc-11eb-94bf-868d3610412e.gif">&nbsp;  
+![TimeAnimation](https://user-images.githubusercontent.com/73584997/119768863-62a86e80-be87-11eb-9d33-0f1fc022f8f1.gif)
 *Figure 9:  Animation of all objects in 10 year intervals*&nbsp;  
 
 These were the initial results (fig.9). Acquisition outside of Britain started early on and continued to increase with time.
 
 I wanted to see the amount of acquisition from each location, so I used the Frequency tool to aggregate the dataset by their coordinates and date.
 
-<img width="500" alt="Image10" src="https://user-images.githubusercontent.com/73584997/119660285-10bb0680-bdfd-11eb-966d-33e147d51877.gif">&nbsp;  
+![TimeGradSymbolAnimation](https://user-images.githubusercontent.com/73584997/119766390-ea3fae80-be82-11eb-9750-586aa9746131.gif)&nbsp;  
 *Figure 10: Animation of all objects in 10 year intervals, graduated symbology*&nbsp;  
  
 Aggregating by Frequency of objects (representing number of objects from location) tells a somewhat different story. The amount of objects taken from locations outside of Britain show that a large amount of objects were taken from what appears to be Nigeria, Japan, and India. The region near Britain is also very active.
 
 To get a closer look, I zoomed in on each region:&nbsp;  
-<img width="500" alt="Africa" src="https://user-images.githubusercontent.com/73584997/119660502-55df3880-bdfd-11eb-9e80-fff1be720571.gif">&nbsp;  
+![Africa](https://user-images.githubusercontent.com/73584997/119768945-8ff51c80-be87-11eb-9154-8256108d69dd.gif)
 *Figure 11: Animation of all objects in 10 year intervals, graduated symbology, in Africa*&nbsp;  
 Many objects in Africa were sourced from Nigeria, Egypt, Zimbabwe, and Malawi. 
 <br>
-<img width="500" alt="AsiaMiddleEast" src="https://user-images.githubusercontent.com/73584997/119660649-7f985f80-bdfd-11eb-98c7-dc25f6078f41.gif">&nbsp;  
+![AsiaMiddleEast](https://user-images.githubusercontent.com/73584997/119768982-9edbcf00-be87-11eb-96d2-abd79400b0a9.gif)
+&nbsp;  
 *Figure 12: Animation of all objects in 10 year intervals, graduated symbology, in Asia and the Middle East*&nbsp;  
 In Asia and the Middle East, China, India, Japan, the Levant, and Malaysia are notable.
 <br>
-
-![Europe](https://user-images.githubusercontent.com/73584997/119660758-98a11080-bdfd-11eb-83de-e98747395b67.gif)
+  
+![Europe](https://user-images.githubusercontent.com/73584997/119769005-aa2efa80-be87-11eb-8d96-4e7d3a23e6fb.gif)
 *Figure 13: Animation of all objects in 10 year intervals, graduated symbology, in Europe*
 In Europe, Britain, Italy, France, and Germany are notable. 
-![NorthAmerica](https://user-images.githubusercontent.com/73584997/119660829-ac4c7700-bdfd-11eb-9312-7c504023e9ec.gif)
+
+![NorthAmerica](https://user-images.githubusercontent.com/73584997/119769049-bb780700-be87-11eb-91d1-86ef1821cb5b.gif)
 *Figure 14: Animation of all objects in 10 year intervals, graduated symbology, in North America*
 In North America, it looks like the majority of items were sourced from Mexico and the east coast of the US.
 <br>
