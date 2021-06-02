@@ -13,7 +13,8 @@ src="https://www.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2"></
 
 ## Background
 <details>
-<summary>Read more</summary> 
+<summary>Read more</summary>
+  
 <br>
 The British Museum has long been a source of controversy. It is an encyclopedic museum whose mission is “to hold for the benefit and education of humanity a collection representative of world cultures ('the collection'), and ensure that the collection is housed in safety, conserved, curated, researched and exhibited” (britishmuseum.org). However, many of the objects in the collection are either suspected or confirmed to have been looted from countries that imperial Britain colonized. Well known examples are the Parthenon Marbles, the Rosetta Stone, and the Benin Bronzes, though there are many other objects in the museum’s eight million object collection that are of dubious provenance. The purpose of this project was to create a tool to act as a visual aid  to shed light on the nature of the museum’s collection. The tool includes interactive elements and quantified visuals that communicate the magnitude of the issue to the public. Additionally, with more information on looted objects, these deliverables can be developed further to build a predictive model to assess any object at the British Museum for likelihood that it was looted. Finally, this may be used as a model on how to approach decolonizing other museum collections.
 </details>
@@ -21,12 +22,14 @@ The British Museum has long been a source of controversy. It is an encyclopedic 
 ## Approach, Methodology, and Analysis
 <details>
 <summary>Step 1: Conduct background research and create work plan</summary> 
+  
 <br>
 For this first task, I researched the history of the British museum, how to download British museum collections information into a dataset, and I located information that could be useful for creating a geospatial data of British invasions and occupations
 </details>
 
 <details>
-<summary>Step 2: Create a dataset of the British Museum collection</summary> 
+<summary>Step 2: Create a dataset of the British Museum collection</summary>
+  
 <br>
 The British Museum has made their collections database publicly available at https://www.britishmuseum.org/collection. The database has been in progress for 40 years and is still not done – there are over 8 million pieces in the museum, and only around half of those have been uploaded to the database so far. Access to only half of the objects in the collection is not a problem for this project since 4 million objects is still a good sized sample, but future work could include updating this project to use all of the items in the collection, once the database is finished.&nbsp;  
   
@@ -58,7 +61,8 @@ This task took considerably longer than anticipated, in part because the British
 
 <details>
 <summary>Step 3: Geocode</summary>
-</br>
+  
+<br>
 The next step in the process was to geocode the objects based in location. The dataset had two location attributes, “Find spot” and “Production place.” The location information has been recorded inconsistently so some objects only have “Find spot,” noted, some only Production place, and some both. To approach this, I decided to geocode by the “Find spot” column first, which is most relevant to the purpose of this project then geocode anything without a “Find spot” by the “Production place” column, since it still reliably approximates the information of interest.&nbsp;  
 
 To start, I used Python to concatenate the “Find spot” and “Production place” columns and drop all columns that had a null value in both. That got rid of objects without location information so could not be used for the project. This removed 254,582 objects. The resulting dataset was now 602,863 rows (objects).&nbsp;  
@@ -93,6 +97,7 @@ The hotspot analysis showed that there was a meaningful cluster of locations in 
 
 <details>
   <summary>Step 4: Plot objects to as points to layer</summary>
+  
   <br>
 The next step was to plot the objects in the collection to the map by joining the rows to their corresponding geocoded locations. I imported the collections CSV into ArcGIS and did some basic exploratory analysis by creating charts from the collections data.&nbsp;  
 <img width="500" alt="Image6" src="https://user-images.githubusercontent.com/73584997/119656879-39410180-bdf9-11eb-8c9f-6a05e71fc975.png">&nbsp;  
@@ -115,6 +120,7 @@ I ran another hotspot analysis to see if the results would be different since ea
 
 <details>
 <summary>Step 5: Visualize and analyzing collection's temporal data</summary>
+  
 <br>
 I was interested in knowing when the museum collected its pieces from different places. I initially planned to use Tracking Analyst in this stage of the analysis, but Tracking Analyst is not offered with ArcGIS Pro. Instead I used ArcGIS built in temporal capabilities and several analysis tools. To start, I created a new field of dates. I copied “acquisition date.” Those without an acquisition date listed (over 57,000 rows) had a Null value. I then used the Convert Time Field tool to convert from str values to date. I added this column (Date_converted) into the layers properties as Time. This process removed all of the data with Null values for date, leaving 545,670 objects. This added in the dimension of time that I wanted to convey. I selected to display objects by 10 year intervals.&nbsp;  
   
@@ -171,6 +177,7 @@ I re-sorted, this time leaving out Great Britain. This time top countries were N
 
 <details>
 <summary>Step 6: Create a layer using the colonial time period dataset (COLDAT) and visualize temporal data</summary>
+  
 <br>
 I was interested in comparing these dates to the dates of British colonization. To do that, I started by creating a layer using country boundary shapefiles and the COLDAT dataset, which was created by academics to track the duration of colonial European empires. I then added the time field and set it to step every 10 years. 
 At this point, for fun, I updated the base map to Modern Antique, which I downloaded from Living Atlas. I also downloaded the Physical Geography symbology set and the Firefly Geography set from Esri Styles to use in the map. 
@@ -194,6 +201,7 @@ I completed my work in ArcGIS Pro with a final, static map, visualized with each
  
 <details>
 <summary>Step 7: Create and publish an embeddable, interactive dashboard of findings in ArcGIS Dashboards</summary>
+  
 <br>  
 Something else that I wanted to look at was what objects the British Museum was sourcing from each location each year. To explore this more, I decided to create a dashboard with ArcGIS Dashboards to allow for further exploration of the data. I planned to publish this so others could interact with the data, too. 
 
@@ -235,6 +243,7 @@ This is a process flow that users can follow to explore objects in the context o
 ## Findings and Future Work
 <details>
 <summary>Read more</summary> 
+  
 <br>
 
 Findings:&nbsp;  
@@ -250,6 +259,7 @@ One of the limitations of this project was that only half of the objects in the 
 ## Data Sources & References 
 <details>
 <summary>Read more</summary> 
+  
 <br>
   
 Data Sources:&nbsp;  
