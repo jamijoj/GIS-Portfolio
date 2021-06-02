@@ -258,7 +258,11 @@ Data Sources:&nbsp;
   - [Symbology - Firefly](https://esri-styles.maps.arcgis.com/home/item.html?id=93a6d9ea3b54478193ba566ab9d8b748)
   - [World Country Shapefiles](https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0?geometry=-168.047%2C-89.382%2C168.047%2C86.054)
 <br>
+  &nbsp;  
+  
+  
 References:&nbsp;  
+
 - “About Us.” British Museum. Accessed 27 Apr, 2021. 
 https://www.britishmuseum.org/privacy-policy#:~:text=The%20British%20Museum%20was%20founded,%2C%20curated%2C%20researched%20and%20exhibited &nbsp;  
 
