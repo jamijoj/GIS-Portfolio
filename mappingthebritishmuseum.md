@@ -181,6 +181,50 @@ The green "sparks" represent objects taken from each country. There is a lag bet
 I completed my work in ArcGIS Pro with a final, static map, visualized with each object as a single point, for the entire timespan of the British Museum collection. The objects overlay the map of British colonies throughout the entire span of the empire.
 
 <img width="500" alt="finallayout" src="https://user-images.githubusercontent.com/73584997/120412064-e2b95300-c323-11eb-8263-e06bd00234a1.png">
-
+*Figure 23: Final map layout*
+  </details>
+</details>
   
+<details>
+<summary>4. Create and publish an embeddable, interactive dashboard of findings in ArcGIS Dashboards</summary>
+  <br>  
+Something else that I wanted to look at was what objects the British Museum was sourcing from each location each year. To explore this more, I decided to create a dashboard with ArcGIS Dashboards to allow for further exploration of the data. I planned to publish this so others could interact with the data, too. 
+
+To start, I uploaded my completed map to ArcGIS online as a web map. I then created a new dashboard and inserted the map and a tool to sort through object locations by country name and year. I included two interesting charts on the dashboard. The first visualized object type and frequency in the database as a scrollable bar chart.
+<img width="500" alt="dashboard" src="https://user-images.githubusercontent.com/73584997/120413611-9b809180-c326-11eb-85e5-6b5ed37b8a3a.png">
+*Figure 24: Dashboard chart - frequency of object type*&nbsp;  
+As it turns out, a little over 19 thousand objects are bank notes.
+The other chart displayed top countries that objects came from each year, not including Britain. &nbsp;  
+<img width="500" alt="dashboard2" src="https://user-images.githubusercontent.com/73584997/120413733-dc78a600-c326-11eb-85cb-7505e3c8dec7.png">&nbsp;  
+*Figure 25: Dashboard chart - frequency of object type*&nbsp;  
+This shows that 6 thousand objects came from Nigeria in 2008. I investigated this in the data and found that most of these objects were photo negatives.<br>
+This is the final dashboard:
+#insert dashboard here
+
+The option to filter for country and year allows users to examine the data more closely.
+  
+![dashboardscreenshot2](https://user-images.githubusercontent.com/73584997/120413984-3bd6b600-c327-11eb-8cd6-ecba9c55bcd6.png)
+*Figure 27: Final dashboard - zoomed to Egypt*&nbsp;  
+<br>
+
+Here we can see that the items sourced from Egypt came from areas along the Nile. The dark background indicates that Egypt was indeed a British colony. 
+
+By clicking on any of the points, users are given more information about the objects taken from there. For example:
+ 
+![dashboardscreenshot3](https://user-images.githubusercontent.com/73584997/120414144-80625180-c327-11eb-858d-7e810a88969a.png)
+*Figure 27: Final dashboard - zoomed to Egypt, detail*&nbsp;  
+
+At this point there were five objects taken. This one was acquired by the British Museum in 1895, is listed as a “tray,” and we are given a description of it. 
+
+This is a process flow that users can follow to explore objects in the context of where and when they were acquired by the British Museum.
+
+[Here is the link to the final dashboard](https://carnegiemellon.maps.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2)
+  
+  </details>
+
+
+
+
+
+
 
