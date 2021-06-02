@@ -186,7 +186,7 @@ I completed my work in ArcGIS Pro with a final, static map, visualized with each
 </details>
   
 <details>
-<summary>4. Create and publish an embeddable, interactive dashboard of findings in ArcGIS Dashboards</summary>
+<summary>Step 4. Create and publish an embeddable, interactive dashboard of findings in ArcGIS Dashboards</summary>
   <br>  
 Something else that I wanted to look at was what objects the British Museum was sourcing from each location each year. To explore this more, I decided to create a dashboard with ArcGIS Dashboards to allow for further exploration of the data. I planned to publish this so others could interact with the data, too. 
 
@@ -196,15 +196,13 @@ To start, I uploaded my completed map to ArcGIS online as a web map. I then crea
 As it turns out, a little over 19 thousand objects are bank notes.
 The other chart displayed top countries that objects came from each year, not including Britain. &nbsp;  
 <img width="500" alt="dashboard2" src="https://user-images.githubusercontent.com/73584997/120413733-dc78a600-c326-11eb-85cb-7505e3c8dec7.png">&nbsp;  
-*Figure 25: Dashboard chart - frequency of object type*&nbsp;  
+*Figure 25: Screenshot: Dashboard chart - frequency of object type*&nbsp;  
 This shows that 6 thousand objects came from Nigeria in 2008. I investigated this in the data and found that most of these objects were photo negatives.<br>
-This is the final dashboard:
-#insert dashboard here
 
-The option to filter for country and year allows users to examine the data more closely.&nbsp;  
+The dashbord gives the option to filter for country and year allows users to examine the data more closely.&nbsp;  
   
 ![dashboardscreenshot2](https://user-images.githubusercontent.com/73584997/120413984-3bd6b600-c327-11eb-8cd6-ecba9c55bcd6.png)
-*Figure 27: Final dashboard - zoomed to Egypt*&nbsp;  
+*Figure 27: Screenshot: Final dashboard - zoomed to Egypt*&nbsp;  
 <br>
 
 Here we can see that the items sourced from Egypt came from areas along the Nile. The dark background indicates that Egypt was indeed a British colony. 
@@ -212,13 +210,14 @@ Here we can see that the items sourced from Egypt came from areas along the Nile
 By clicking on any of the points, users are given more information about the objects taken from there. For example:&nbsp;  
  
 ![dashboardscreenshot3](https://user-images.githubusercontent.com/73584997/120414144-80625180-c327-11eb-858d-7e810a88969a.png)
-*Figure 27: Final dashboard - zoomed to Egypt, detail*&nbsp;  
+*Figure 27: Screenshot: Final dashboard - zoomed to Egypt, detail*&nbsp;  
 
 At this point there were five objects taken. This one was acquired by the British Museum in 1895, is listed as a “tray,” and we are given a description of it. 
 
 This is a process flow that users can follow to explore objects in the context of where and when they were acquired by the British Museum.
+  
+This is the final dashboard (also displayed at the top of the page) with a [link to the final dashboard](https://carnegiemellon.maps.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2):
 
-[Here is the link to the final dashboard](https://carnegiemellon.maps.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2)
   
   </details>
 
