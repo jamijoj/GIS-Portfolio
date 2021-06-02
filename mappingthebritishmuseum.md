@@ -8,9 +8,7 @@
 - - -
 ### Dashboard to explore objects. For more information on this, see *Approach, Methodology, and Analysis: Step 4*
 
-<style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Mapping the British Museum" src="https://www.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2"></iframe></div>
-
-<iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+<iframe width="700" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
 src="https://www.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2"></iframe>
 
 ## Background
