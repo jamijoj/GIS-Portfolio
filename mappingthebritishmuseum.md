@@ -230,18 +230,18 @@ This is a process flow that users can follow to explore objects in the context o
 <details>
 <summary>Read more</summary> 
 <br>
-Findings
+##### Findings
 The guiding concept behind this project was to visualize the acquisition of objects from around the world for the British Museum collection and compare that to imperial Britain’s presence in the countries of origin. The analysis detailed in this report shows that correlation does exist. It is obvious that colonial Britain was indeed taking objects from places during periods of colonization. Even though the British Museum claims that many of these items were not wrongfully taken, saying “they were not acquired as a result of conflict or violence,” the power imbalance between colonizers and colonized implies lack of full willingness and compliance, unless the British Museum can prove otherwise. Having this visualized and shareable is a powerful storytelling tool that will supplement National Geographic’s article well. As somewhat of a side note, another interesting finding from this analysis is that many objects in the British Museum are photographs, printed material, and banknotes. While their claim of having 8 million objects is certainly valid, knowledge of what these are helps contextualize the statement. 
 
-Future work
+##### Future work
 One of the limitations of this project was that only half of the objects in the museum have been recorded in their database. This analysis could be relaunched in future to include those objects once they are updated to the database. Something notable in this project which is probably related to that is the exclusion of 57,000 objects from the temporal analysis due to not having an acquisition date recorded. It could be interesting to look into these objects further to see if a pattern exists in objects that are in the database with no acquisition date attached. 
 
 ## Data Sources & References 
 <details>
-##### Data Sources:
-- [The British Museum Collection](https://www.britishmuseum.org/collection)
-- [COLDAT colonial dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T9SDEW)
-- Map Layers and Symbology: 
+##### Data Sources
+ - [The British Museum Collection](https://www.britishmuseum.org/collection)
+ - [COLDAT colonial dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T9SDEW)
+ - Map Layers and Symbology: 
    - [Basemap - Modern Antique](https://www.arcgis.com/home/item.html?id=f35ef07c9ed24020aadd65c8a65d3754)
    - [Symbology – Physical geography](https://esri-styles.maps.arcgis.com/home/item.html?id=82b454b4651643d3aa0fca3caf4945f7)
    - [Symbology - Firefly](https://esri-styles.maps.arcgis.com/home/item.html?id=93a6d9ea3b54478193ba566ab9d8b748)
