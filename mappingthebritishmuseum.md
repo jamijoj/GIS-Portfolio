@@ -194,9 +194,8 @@ To start, I uploaded my completed map to ArcGIS online as a web map. I then crea
   
 This is a screenshot of the final dashboard (also embedded at the top of the page) with a [link to the final dashboard](https://carnegiemellon.maps.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2)
 
-<img width="700" alt="dashboard" src="https://user-images.githubusercontent.com/73584997/120415091-f6b38380-c328-11eb-9c34-bfbea1921acf.png">
-
-  
+<img width="700" alt="dashboard" src="https://user-images.githubusercontent.com/73584997/120415091-f6b38380-c328-11eb-9c34-bfbea1921acf.png">&nbsp;  
+    
 
 The first chart I included in the dashboard visualized object type and frequency in the database as a scrollable bar chart.&nbsp;  
 <img width="500" alt="dashboard" src="https://user-images.githubusercontent.com/73584997/120413611-9b809180-c326-11eb-85e5-6b5ed37b8a3a.png">&nbsp;  
