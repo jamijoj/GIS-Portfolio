@@ -6,7 +6,7 @@
 ### Animation of imperial Britain's spread compared to collection of objects for the British Museum, in ten year intervals
 <img width="500" alt="gif1" src="https://user-images.githubusercontent.com/73584997/119765961-2d4d5200-be82-11eb-975f-f93adbeccb1a.gif">&nbsp;  
 - - -
-### Dashboard to explore objects. For more information on this, see *Approach, Methodology, and Analysis: Step 4*
+### Dashboard to explore objects. For more information on this, see "Approach, Methodology, and Analysis: Step 4"
 
 <iframe width="700" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
 src="https://www.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2"></iframe>
