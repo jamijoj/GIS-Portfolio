@@ -88,11 +88,10 @@ This is a visual representation of where objects in the British collection come 
 *Figures 4 & 5: Hotspot analysis, zoomed to Britain*&nbsp;  
 The hotspot analysis showed that there was a meaningful cluster of locations in and around Britain.
 
-### Step 4: Plot objects to as points to layer
-&nbsp;  
+### Step 4: Plot objects to as points to layer 
+
 The next step was to plot the objects in the collection to the map by joining the rows to their corresponding geocoded locations. I imported the collections CSV into ArcGIS and did some basic exploratory analysis by creating charts from the collections data.&nbsp;  
-<img width="500" alt="Image6" src="https://user-images.githubusercontent.com/73584997/119656879-39410180-bdf9-11eb-8c9f-6a05e71fc975.png">&nbsp;  
-  
+<img width="650" alt="Image6" src="https://user-images.githubusercontent.com/73584997/119656879-39410180-bdf9-11eb-8c9f-6a05e71fc975.png">&nbsp;  
 *Figure 6: Objects aggregated by object type*&nbsp;  
   
 The most common  object type is “print.”
@@ -109,8 +108,6 @@ I ran another hotspot analysis to see if the results would be different since ea
 *Figure 8: Hotspot analysis 2*&nbsp;  
 
 ### Step 5: Visualize and analyzing collection's temporal data
-&nbsp;  
-
 I was interested in knowing when the museum collected its pieces from different places. I initially planned to use Tracking Analyst in this stage of the analysis, but Tracking Analyst is not offered with ArcGIS Pro. Instead I used ArcGIS built in temporal capabilities and several analysis tools. To start, I created a new field of dates. I copied “acquisition date.” Those without an acquisition date listed (over 57,000 rows) had a Null value. I then used the Convert Time Field tool to convert from str values to date. I added this column (Date_converted) into the layers properties as Time. This process removed all of the data with Null values for date, leaving 545,670 objects. This added in the dimension of time that I wanted to convey. I selected to display objects by 10 year intervals.&nbsp;  
   
 ![TimeAnimation](https://user-images.githubusercontent.com/73584997/119771303-78b82e00-be8b-11eb-885d-b9f7dc297f05.gif)
@@ -173,9 +170,6 @@ This table shows the top 15 locations and years. All come from Britain, Nigeria,
 I re-sorted, this time leaving out Great Britain. This time top countries were Nigeria, Japan, Italy, France, Greece, India, and Korea. For top locations for all years (the bar chart), Japan, France, Italy, Nigeria, and Switzerland are the top five. 
 
 ### Step 6: Create a layer using the colonial time period dataset (COLDAT) and visualize temporal data
-  
-&nbsp;  
-
 I was interested in comparing these dates to the dates of British colonization. To do that, I started by creating a layer using country boundary shapefiles and the COLDAT dataset, which was created by academics to track the duration of colonial European empires. I then added the time field and set it to step every 10 years. 
 At this point, for fun, I updated the base map to Modern Antique, which I downloaded from Living Atlas. I also downloaded the Physical Geography symbology set and the Firefly Geography set from Esri Styles to use in the map. 
 
