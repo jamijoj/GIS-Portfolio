@@ -235,9 +235,9 @@ By clicking on any of the points, users are given more information about the obj
 At this point there were five objects taken. This one was acquired by the British Museum in 1895, is listed as a “tray,” and we are given a description of it. 
 
 This is a process flow that users can follow to explore objects in the context of where and when they were acquired by the British Museum.
-
   
   </details>
+</details>
 
 ## Findings and Future Work
 <details>
