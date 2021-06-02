@@ -193,7 +193,8 @@ Something else that I wanted to look at was what objects the British Museum was 
 To start, I uploaded my completed map to ArcGIS online as a web map. I then created a new dashboard and inserted the map and a tool to sort through object locations by country name and year. I included two interesting charts on the dashboard.
   
 This is a screenshot of the final dashboard (also embedded at the top of the page) with a [link to the final dashboard](https://carnegiemellon.maps.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2)
-![dashboardscreenshot](https://user-images.githubusercontent.com/73584997/120415091-f6b38380-c328-11eb-9c34-bfbea1921acf.png)
+
+<img width="700" alt="dashboard" src="https://user-images.githubusercontent.com/73584997/120415091-f6b38380-c328-11eb-9c34-bfbea1921acf.png">
 
   
 
@@ -208,7 +209,8 @@ This shows that 6 thousand objects came from Nigeria in 2008. I investigated thi
 
 The dashbord gives the option to filter for country and year allows users to examine the data more closely.&nbsp;  
   
-![dashboardscreenshot2](https://user-images.githubusercontent.com/73584997/120413984-3bd6b600-c327-11eb-8cd6-ecba9c55bcd6.png)
+![dashboardscreenshot2](https://user-images.githubusercontent.com/73584997/120413984-3bd6b600-c327-11eb-8cd6-ecba9c55bcd6.png)&nbsp;  
+  
 *Figure 26: Screenshot: Final dashboard - zoomed to Egypt*&nbsp;  
 <br>
 
