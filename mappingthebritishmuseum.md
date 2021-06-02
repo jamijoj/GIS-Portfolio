@@ -24,7 +24,7 @@ The British Museum has long been a source of controversy. It is an encyclopedic 
 <summary>Step 1: Conduct background research and create work plan</summary> 
   
 <br>
-For this first task, I researched the history of the British museum, how to download British museum collections information into a dataset, and I located information that could be useful for creating a geospatial data of British invasions and occupations
+*For this first task,* I researched the history of the British museum, how to download British museum collections information into a dataset, and I located information that could be useful for creating a geospatial data of British invasions and occupations
 </details>
 
 <details>
