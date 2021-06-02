@@ -190,9 +190,16 @@ I completed my work in ArcGIS Pro with a final, static map, visualized with each
   <br>  
 Something else that I wanted to look at was what objects the British Museum was sourcing from each location each year. To explore this more, I decided to create a dashboard with ArcGIS Dashboards to allow for further exploration of the data. I planned to publish this so others could interact with the data, too. 
 
-To start, I uploaded my completed map to ArcGIS online as a web map. I then created a new dashboard and inserted the map and a tool to sort through object locations by country name and year. I included two interesting charts on the dashboard. The first visualized object type and frequency in the database as a scrollable bar chart.&nbsp;  
+To start, I uploaded my completed map to ArcGIS online as a web map. I then created a new dashboard and inserted the map and a tool to sort through object locations by country name and year. I included two interesting charts on the dashboard.
+  
+This is a screenshot of the final dashboard (also embedded at the top of the page) with a [link to the final dashboard](https://carnegiemellon.maps.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2)
+![dashboardscreenshot](https://user-images.githubusercontent.com/73584997/120415091-f6b38380-c328-11eb-9c34-bfbea1921acf.png)
+
+  
+
+The first chart I included in the dashboard visualized object type and frequency in the database as a scrollable bar chart.&nbsp;  
 <img width="500" alt="dashboard" src="https://user-images.githubusercontent.com/73584997/120413611-9b809180-c326-11eb-85e5-6b5ed37b8a3a.png">&nbsp;  
-*Figure 24: Dashboard chart - frequency of object type*&nbsp;  
+*Figure 24: Screenshot: Dashboard chart - frequency of object type*&nbsp;  
 As it turns out, a little over 19 thousand objects are bank notes.
 The other chart displayed top countries that objects came from each year, not including Britain. &nbsp;  
 <img width="500" alt="dashboard2" src="https://user-images.githubusercontent.com/73584997/120413733-dc78a600-c326-11eb-85cb-7505e3c8dec7.png">&nbsp;  
@@ -202,7 +209,7 @@ This shows that 6 thousand objects came from Nigeria in 2008. I investigated thi
 The dashbord gives the option to filter for country and year allows users to examine the data more closely.&nbsp;  
   
 ![dashboardscreenshot2](https://user-images.githubusercontent.com/73584997/120413984-3bd6b600-c327-11eb-8cd6-ecba9c55bcd6.png)
-*Figure 27: Screenshot: Final dashboard - zoomed to Egypt*&nbsp;  
+*Figure 26: Screenshot: Final dashboard - zoomed to Egypt*&nbsp;  
 <br>
 
 Here we can see that the items sourced from Egypt came from areas along the Nile. The dark background indicates that Egypt was indeed a British colony. 
@@ -215,11 +222,40 @@ By clicking on any of the points, users are given more information about the obj
 At this point there were five objects taken. This one was acquired by the British Museum in 1895, is listed as a “tray,” and we are given a description of it. 
 
 This is a process flow that users can follow to explore objects in the context of where and when they were acquired by the British Museum.
-  
-This is the final dashboard (also displayed at the top of the page) with a [link to the final dashboard](https://carnegiemellon.maps.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2):
 
   
   </details>
+
+## Findings and Future Work
+<details>
+<summary>Read more</summary> 
+<br>
+Findings
+The guiding concept behind this project was to visualize the acquisition of objects from around the world for the British Museum collection and compare that to imperial Britain’s presence in the countries of origin. The analysis detailed in this report shows that correlation does exist. It is obvious that colonial Britain was indeed taking objects from places during periods of colonization. Even though the British Museum claims that many of these items were not wrongfully taken, saying “they were not acquired as a result of conflict or violence,” the power imbalance between colonizers and colonized implies lack of full willingness and compliance, unless the British Museum can prove otherwise. Having this visualized and shareable is a powerful storytelling tool that will supplement National Geographic’s article well. As somewhat of a side note, another interesting finding from this analysis is that many objects in the British Museum are photographs, printed material, and banknotes. While their claim of having 8 million objects is certainly valid, knowledge of what these are helps contextualize the statement. 
+
+Future work
+One of the limitations of this project was that only half of the objects in the museum have been recorded in their database. This analysis could be relaunched in future to include those objects once they are updated to the database. Something notable in this project which is probably related to that is the exclusion of 57,000 objects from the temporal analysis due to not having an acquisition date recorded. It could be interesting to look into these objects further to see if a pattern exists in objects that are in the database with no acquisition date attached. 
+
+## Data Sources & References 
+<details>
+##### Data Sources:
+- [The British Museum Collection](https://www.britishmuseum.org/collection)
+- [COLDAT colonial dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T9SDEW)
+- Map Layers and Symbology: 
+   - [Basemap - Modern Antique](https://www.arcgis.com/home/item.html?id=f35ef07c9ed24020aadd65c8a65d3754)
+   - [Symbology – Physical geography](https://esri-styles.maps.arcgis.com/home/item.html?id=82b454b4651643d3aa0fca3caf4945f7)
+   - [Symbology - Firefly](https://esri-styles.maps.arcgis.com/home/item.html?id=93a6d9ea3b54478193ba566ab9d8b748)
+   - [World Country Shapefiles](https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0?geometry=-168.047%2C-89.382%2C168.047%2C86.054)
+<br>
+##### References:
+- “About Us.” British Museum. Accessed 27 Apr, 2021. 
+https://www.britishmuseum.org/privacy-policy#:~:text=The%20British%20Museum%20was%20founded,%2C%20curated%2C%20researched%20and%20exhibited
+
+- Alberge, Dalya. “British Museum is world’s largest receiver of stolen goods, says QC.” the 
+Guardian.com. 4 Nov 2019. https://www.theguardian.com/world/2019/nov/04/british-museum-is-worlds-largest-receiver-of-stolen-goods-says-qc
+
+- Landolfi, Jessica. “Even After 130 Years, National Geographic Captures a Wide Demographic 
+Across all Mediums.” CiviScience.com. 12 Aug 2020. https://civicscience.com/even-after-130-years-national-geographic-captures-a-wide-demographic-across-all-mediums/#:~:text=Demographically%2C%20Watchers%20and%20Readers%20are%20Different&text=Specifically%2C%20U.S.%20Adults%20ages%2055,the%20magazine%20is%20the%20opposite.
 
 
 
