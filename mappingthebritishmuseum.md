@@ -3,10 +3,10 @@
 <img width="500" alt="Final1" src="https://user-images.githubusercontent.com/73584997/119645151-b796a700-bdeb-11eb-9438-0d009dc1e202.png">
 
 - - - 
-### Animation of imperial Britain's spread compared to collection of objects for the British Museum, in ten year intervals
+#### Animation of imperial Britain's spread compared to collection of objects for the British Museum, in ten year intervals
 <img width="500" alt="gif1" src="https://user-images.githubusercontent.com/73584997/119765961-2d4d5200-be82-11eb-975f-f93adbeccb1a.gif">&nbsp;  
 - - -
-### Dashboard to explore objects. For more information on this, see "Approach, Methodology, and Analysis: Step 4"
+#### Dashboard to explore objects. For more information on this, see "Approach, Methodology, and Analysis: Step 4"
 
 <iframe width="900 " height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
 src="https://www.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2"></iframe>
@@ -58,32 +58,30 @@ The cleaned dataset had approximately 857,445 rows (each corresponding to an obj
 </details>
 
 <details>
-<summary>Step 3: Create map in ArcGIS with layer of British occupation by territory and layer of objects in the British visualized by location of origin and date of acquisition</summary> 
-  <details>
-  <summary>3a.1 Geocode</summary>
-The next step in the process was to geocode the objects based in location. The dataset had two location attributes, “Find spot” and “Production place.” The location information has been recorded inconsistently so some objects only have “Find spot,” noted, some only Production place, and some both. To approach this, I decided to geocode by the “Find spot” column first, which is most relevant to the purpose of this project then geocode anything without a “Find spot” by the “Production place” column, since it still reliably approximates the information of interest.
-&nbsp;  
+<summary>Step 3: Geocode</summary>
+</br>
+The next step in the process was to geocode the objects based in location. The dataset had two location attributes, “Find spot” and “Production place.” The location information has been recorded inconsistently so some objects only have “Find spot,” noted, some only Production place, and some both. To approach this, I decided to geocode by the “Find spot” column first, which is most relevant to the purpose of this project then geocode anything without a “Find spot” by the “Production place” column, since it still reliably approximates the information of interest.&nbsp;  
+
 To start, I used Python to concatenate the “Find spot” and “Production place” columns and drop all columns that had a null value in both. That got rid of objects without location information so could not be used for the project. This removed 254,582 objects. The resulting dataset was now 602,863 rows (objects).&nbsp;  
 Instead of geocoding 600k + objects, I decided to make a list of all the locations in the dataset, with the understanding that many would repeat as multiple objects correspond to the same location, geocode this list, then join the collections dataset to the geocoded locations. To start, I made a list of unique instances in the “Find spot” column and in the “Production place” column and merged them into a single list while concurrently dropping duplicate values. This gave me a list with 9,087 locations. I knew there were locations that repeated since the way locations were entered is so inconsistent - for example, “Iran,” “Iran, East” and “Iran (archaic)” are all read as separate locations. The 9k entries on this list represent an upward bound of the true number of locations for objects. The process needed to geocode exact locations for each object are beyond the scope of this project; instead, I geocoded by city, when available, and country.&nbsp;  
     
-
 I used the Geocode Address tool with Esri’s World Map Locator to geocode the “Find spot” and “Production place” columns in the dataset. I geocoded with parameters set to look in all countries, with categories set to  “Populated Places” and “POI.” The results of the first geocode are here:
-    <br>
+<br>
 <img width="500" alt="Image1" src="https://user-images.githubusercontent.com/73584997/119650719-237c0e00-bdf2-11eb-9317-3105a47120cb.png">&nbsp;  
 *Figure 1: Locations of British Museum objects geocoded*&nbsp;  
 <br>
 I noticed a high number of objects from the US (highlighted in blue), which seemed odd to me since the British museum is not known for having a large Indigenous American or North American collection. I highlighted these to explore them further and realized that the list of addresses I built from the database contained archaic place names like Naukratis, Pharae, Cleonae, Thebes, Marathon, and others. The geocoder matched these places to cities in the US with the same names. There were also a number of unmatched rows locations that had not been recognized at all. Using the Rematch Address Tool, I rematched all unmatched addresses. Next, I selected all rows by attribute to find objects that had been matched to the US. I manually went through the list and coded locations correctly.
-    <br>    
+<br>    
 <img width="500" alt="Image2" src="https://user-images.githubusercontent.com/73584997/119650960-7229a800-bdf2-11eb-9ac1-e4211bc3b0d7.png">&nbsp;  
 *Figure 2: Mismatched US addresses matched correctly*
 
-The results of this rematch (fig. 2) showed that there were still quite a few points in the US, but many mismatched points belonged in the Mediterranean region, because they were place names in ancient empires like the Roman, Greek, and Byantine empires.&nbsp;  
+The results of this rematch (fig. 2) showed that there were still quite a few points in the US, but many mismatched points belonged in the Mediterranean region, because they were place names in ancient empires like the Roman, Greek, and Byzantine empires.&nbsp;  
     
 
 The locator I used was the Esri World Locator, but I had to go through and manually recode addresses that were names of archaic cities. In future, datasets that have a lot of archaic names could be geocoded from a locator created using ancient city names and their modern equivalents. [This is an example](https://pleiades.stoa.org/downloads) of such a dataset. &nbsp;  
 
 Here is the final map with locations geocoded:
-    <br>
+<br>
 <img width="500" alt="Image3" src="https://user-images.githubusercontent.com/73584997/119654323-54f6d880-bdf6-11eb-86c5-dc332c44ce78.png">&nbsp;  
 *Figure 3: Object locations geocoded*&nbsp;  
 
@@ -95,13 +93,12 @@ The hotspot analysis showed that there was a meaningful cluster of locations in 
 </details>
 
 <details>
-<summary>3a.2. Plot objects to as points to layer</summary
+  <summary>Step 4: Plot objects to as points to layer</summary>
   <br>
 The next step was to plot the objects in the collection to the map by joining the rows to their corresponding geocoded locations. I imported the collections CSV into ArcGIS and did some basic exploratory analysis by creating charts from the collections data.&nbsp;  
 <img width="500" alt="Image6" src="https://user-images.githubusercontent.com/73584997/119656879-39410180-bdf9-11eb-8c9f-6a05e71fc975.png">&nbsp;  
   
 *Figure 6: Objects aggregated by object type*&nbsp;  
-  
   
 The most common  object type is “print.”
   
@@ -118,7 +115,7 @@ I ran another hotspot analysis to see if the results would be different since ea
 </details>
 
 <details>
-<summary>3b. Visualizing and analyzing collections temporal data</summary>
+<summary>Step 5: Visualize and analyzing collection's temporal data</summary>
 <br>
 I was interested in knowing when the museum collected its pieces from different places. I initially planned to use Tracking Analyst in this stage of the analysis, but Tracking Analyst is not offered with ArcGIS Pro. Instead I used ArcGIS built in temporal capabilities and several analysis tools. To start, I created a new field of dates. I copied “acquisition date.” Those without an acquisition date listed (over 57,000 rows) had a Null value. I then used the Convert Time Field tool to convert from str values to date. I added this column (Date_converted) into the layers properties as Time. This process removed all of the data with Null values for date, leaving 545,670 objects. This added in the dimension of time that I wanted to convey. I selected to display objects by 10 year intervals.&nbsp;  
   
@@ -171,11 +168,11 @@ This table shows the top 15 locations and years. All come from Britain, Nigeria,
 <img width="500" alt="chartnobritain" src="https://user-images.githubusercontent.com/73584997/120410866-d502ce00-c321-11eb-88fd-926b5ad69aac.png">&nbsp;  
 
 I re-sorted, this time leaving out Great Britain. This time top countries were Nigeria, Japan, Italy, France, Greece, India, and Korea. For top locations for all years (the bar chart), Japan, France, Italy, Nigeria, and Switzerland are the top five. 
-  </details>
+</details>
 
 <details>
-<summary>3c. Create a layer using the colonial time period dataset (COLDAT) and visualize temporal data</summary>
-  <br>
+<summary>Step 6: Create a layer using the colonial time period dataset (COLDAT) and visualize temporal data</summary>
+<br>
 I was interested in comparing these dates to the dates of British colonization. To do that, I started by creating a layer using country boundary shapefiles and the COLDAT dataset, which was created by academics to track the duration of colonial European empires. I then added the time field and set it to step every 10 years. 
 At this point, for fun, I updated the base map to Modern Antique, which I downloaded from Living Atlas. I also downloaded the Physical Geography symbology set and the Firefly Geography set from Esri Styles to use in the map. 
 
@@ -194,12 +191,11 @@ I completed my work in ArcGIS Pro with a final, static map, visualized with each
 
 <img width="500" alt="finallayout" src="https://user-images.githubusercontent.com/73584997/120412064-e2b95300-c323-11eb-8263-e06bd00234a1.png">
 *Figure 23: Final map layout*
-  </details>
 </details>
-  
+ 
 <details>
-<summary>Step 4. Create and publish an embeddable, interactive dashboard of findings in ArcGIS Dashboards</summary>
-  <br>  
+<summary>Step 7: Create and publish an embeddable, interactive dashboard of findings in ArcGIS Dashboards</summary>
+<br>  
 Something else that I wanted to look at was what objects the British Museum was sourcing from each location each year. To explore this more, I decided to create a dashboard with ArcGIS Dashboards to allow for further exploration of the data. I planned to publish this so others could interact with the data, too. 
 
 To start, I uploaded my completed map to ArcGIS online as a web map. I then created a new dashboard and inserted the map and a tool to sort through object locations by country name and year. I included two interesting charts on the dashboard.
@@ -235,8 +231,6 @@ By clicking on any of the points, users are given more information about the obj
 At this point there were five objects taken. This one was acquired by the British Museum in 1895, is listed as a “tray,” and we are given a description of it. 
 
 This is a process flow that users can follow to explore objects in the context of where and when they were acquired by the British Museum.
-  
-  </details>
 </details>
 
 ## Findings and Future Work
