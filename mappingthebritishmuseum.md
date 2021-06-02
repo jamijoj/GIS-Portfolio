@@ -148,7 +148,7 @@ Many objects in Oceania were sourced from Australia, and there is an interesting
 I then sorted locations by number of objects per year and selected all those that had 1000 objects or more per year, which ended up being 74 place/year combinations. 
 <br>
  
-<img width="500" alt="NumObjectsTable12" src="https://user-images.githubusercontent.com/73584997/120410120-5f4a3280-c320-11eb-916b-42b03013cdfd.png">
+<img width="450" alt="NumObjectsTable12" src="https://user-images.githubusercontent.com/73584997/120410120-5f4a3280-c320-11eb-916b-42b03013cdfd.png">
 <img width="500" alt="Comparison of objects by country" src="https://user-images.githubusercontent.com/73584997/120410091-55c0ca80-c320-11eb-9e50-ff6996bf2264.png">&nbsp;  
   
 *Figures 17 & 18: Selection from the top 74 source countries and years - table(17) and chart(18)*&nbsp;  
