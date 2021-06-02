@@ -30,25 +30,31 @@ For this first task, I researched the history of the British museum, how to down
 <br>
 The British Museum has made their collections database publicly available at https://www.britishmuseum.org/collection. The database has been in progress for 40 years and is still not done – there are over 8 million pieces in the museum, and only around half of those have been uploaded to the database so far. Access to only half of the objects in the collection is not a problem for this project since 4 million objects is still a good sized sample, but future work could include updating this project to use all of the items in the collection, once the database is finished.
 
-This task took considerably longer than anticipated, in part because the British Museum took down the public SPARQL endpoint that was used to query their collections database. I was left to manually download the necessary datasets through their online collections website. The biggest frustration with this was that downloads of more than 10,000 pieces are not allowed. I didn’t have time to build a web scraper for this purpose, so I went to the collection online, used the filter feature to filter by region (Africa, Oceania, the America, Asia, Europe) and then, for each region, filtered by preset subject filters for arts/architecture, ceremony/ritual, society/human life and religion/belief. At the end I had over 100 datasets downloaded, which I combined into one dataset using Python. I next cleaned the dataset in Python using the following steps:
+This task took considerably longer than anticipated, in part because the British Museum took down the public SPARQL endpoint that was used to query their collections database. I was left to manually download the necessary datasets through their online collections website. The biggest frustration with this was that downloads of more than 10,000 pieces are not allowed. I didn’t have time to build a web scraper for this purpose, so I went to the collection online, used the filter feature to filter by region (Africa, Oceania, the America, Asia, Europe) and then, for each region, filtered by preset subject filters for arts/architecture, ceremony/ritual, society/human life and religion/belief. At the end I had over 100 datasets downloaded, which I combined into one dataset using Python. I next cleaned the dataset in Python using the following steps:&nbsp;  
+ 1. Removed rows with duplicate values&nbsp;  
+  
+ 2. Removed objects that were photographs by removing rows with “Technique” listed as any of the following: Albumen printing, gelatin silver printing, photograph, glyphograph , negative, photograph, postcard. This removed over 100,000 rows.&nbsp;  
+  
+ 3. Removed objects listed as coins, which removed 333,000 rows.&nbsp;  
+  
+ 4. Filled NaN values with 0&nbsp;  
+  
+ 5. Removed unneeded columns (“Image,” “Denomination,” “Escapement,” “Type series,” “Dimensions,” “Inscription,” “Curators comments,” “Bib references,” “BM/Big number,” “Reg number,” “Add ids,” “Cat no,” “Banknote serial number,” “Joined objects,” “Authority,” “Condition,” “School/style,” “State,” “Ethnic Name (made by),” “Ethnic name (assoc),” “Ware,” “Subjects,” “Assoc name,” “Assoc place,” “Assoc events,” “Assoc titles,” “Acq name (excavator),” and “Acq name (previous).” &nbsp;  
+  &nbsp;  
+  
 
- 1. Removed rows with duplicate values
- 2. Removed objects that were photographs by removing rows with “Technique” listed as any of the following: Albumen printing, gelatin silver printing, photograph, glyphograph , negative, photograph, postcard. This removed over 100,000 rows.
- 3. Removed objects listed as coins, which removed 333,000 rows.
- 4. Filled NaN values with 0
- 5. Removed unneeded columns (“Image,” “Denomination,” “Escapement,” “Type series,” “Dimensions,” “Inscription,” “Curators comments,” “Bib references,” “BM/Big number,” “Reg number,” “Add ids,” “Cat no,” “Banknote serial number,” “Joined objects,” “Authority,” “Condition,” “School/style,” “State,” “Ethnic Name (made by),” “Ethnic name (assoc),” “Ware,” “Subjects,” “Assoc name,” “Assoc place,” “Assoc events,” “Assoc titles,” “Acq name (excavator),” and “Acq name (previous).” 
-
-The cleaned dataset had approximately 857,445 rows (each corresponding to an object) and 10 columns. The columns were:
- - *Object_type:* Type of object (painting, pottery, etc) 
- - *Title:* Name of object, if exists
- - *Description:* A brief description of the object
- - *Culture:* The culture from which the object came
- - *Production date:* The confirmed or estimated year the object was made
- - *Production place:* The place the object was made. Recorded either as city, country, POI, or a mix of all three
- - *Find spot:* The place the object was “found.” The place the object was made. Recorded either as city, country, POI, or a mix of all three
- - *Acq date:* The year the object was acquired by the British Museum
- - *Acq notes (acq):* Any notes about the acquisition
- - *Location:* Says whether the object is on display and, if so, where in the museum it is
+The cleaned dataset had approximately 857,445 rows (each corresponding to an object) and 10 columns. The columns were:&nbsp;  
+  
+- *Object_type:* Type of object (painting, pottery, etc) 
+- *Title:* Name of object, if exists
+- *Description:* A brief description of the object
+- *Culture:* The culture from which the object came
+- *Production date:* The confirmed or estimated year the object was made
+- *Production place:* The place the object was made. Recorded either as city, country, POI, or a mix of all three
+- *Find spot:* The place the object was “found.” The place the object was made. Recorded either as city, country, POI, or a mix of all three
+- *Acq date:* The year the object was acquired by the British Museum
+- *Acq notes (acq):* Any notes about the acquisition
+- *Location:* Says whether the object is on display and, if so, where in the museum it is
 </details>
 
 <details>
@@ -56,10 +62,10 @@ The cleaned dataset had approximately 857,445 rows (each corresponding to an obj
   <details>
   <summary>3a.1 Geocode</summary>
 The next step in the process was to geocode the objects based in location. The dataset had two location attributes, “Find spot” and “Production place.” The location information has been recorded inconsistently so some objects only have “Find spot,” noted, some only Production place, and some both. To approach this, I decided to geocode by the “Find spot” column first, which is most relevant to the purpose of this project then geocode anything without a “Find spot” by the “Production place” column, since it still reliably approximates the information of interest.
-
-To start, I used Python to concatenate the “Find spot” and “Production place” columns and drop all columns that had a null value in both. That got rid of objects without location information so could not be used for the project. This removed 254,582 objects. The resulting dataset was now 602,863 rows (objects).  
-
-Instead of geocoding 600k + objects, I decided to make a list of all the locations in the dataset, with the understanding that many would repeat as multiple objects correspond to the same location, geocode this list, then join the collections dataset to the geocoded locations. To start, I made a list of unique instances in the “Find spot” column and in the “Production place” column and merged them into a single list while concurrently dropping duplicate values. This gave me a list with 9,087 locations. I knew there were locations that repeated since the way locations were entered is so inconsistent - for example, “Iran,” “Iran, East” and “Iran (archaic)” are all read as separate locations. The 9k entries on this list represent an upward bound of the true number of locations for objects. The process needed to geocode exact locations for each object are beyond the scope of this project; instead, I geocoded by city, when available, and country. 
+&nbsp;  
+To start, I used Python to concatenate the “Find spot” and “Production place” columns and drop all columns that had a null value in both. That got rid of objects without location information so could not be used for the project. This removed 254,582 objects. The resulting dataset was now 602,863 rows (objects).&nbsp;  
+Instead of geocoding 600k + objects, I decided to make a list of all the locations in the dataset, with the understanding that many would repeat as multiple objects correspond to the same location, geocode this list, then join the collections dataset to the geocoded locations. To start, I made a list of unique instances in the “Find spot” column and in the “Production place” column and merged them into a single list while concurrently dropping duplicate values. This gave me a list with 9,087 locations. I knew there were locations that repeated since the way locations were entered is so inconsistent - for example, “Iran,” “Iran, East” and “Iran (archaic)” are all read as separate locations. The 9k entries on this list represent an upward bound of the true number of locations for objects. The process needed to geocode exact locations for each object are beyond the scope of this project; instead, I geocoded by city, when available, and country.&nbsp;  
+    
 
 I used the Geocode Address tool with Esri’s World Map Locator to geocode the “Find spot” and “Production place” columns in the dataset. I geocoded with parameters set to look in all countries, with categories set to  “Populated Places” and “POI.” The results of the first geocode are here:
     <br>
@@ -71,14 +77,15 @@ I noticed a high number of objects from the US (highlighted in blue), which seem
 <img width="500" alt="Image2" src="https://user-images.githubusercontent.com/73584997/119650960-7229a800-bdf2-11eb-9ac1-e4211bc3b0d7.png">&nbsp;  
 *Figure 2: Mismatched US addresses matched correctly*
 
-The results of this rematch (fig. 2) showed that there were still quite a few points in the US, but many mismatched points belonged in the Mediterranean region, because they were place names in ancient empires like the Roman, Greek, and Byantine empires.
+The results of this rematch (fig. 2) showed that there were still quite a few points in the US, but many mismatched points belonged in the Mediterranean region, because they were place names in ancient empires like the Roman, Greek, and Byantine empires.&nbsp;  
+    
 
-The locator I used was the Esri World Locator, but I had to go through and manually recode addresses that were names of archaic cities. In future, datasets that have a lot of archaic names could be geocoded from a locator created using ancient city names and their modern equivalents. [This is an example](https://pleiades.stoa.org/downloads) of such a dataset. 
+The locator I used was the Esri World Locator, but I had to go through and manually recode addresses that were names of archaic cities. In future, datasets that have a lot of archaic names could be geocoded from a locator created using ancient city names and their modern equivalents. [This is an example](https://pleiades.stoa.org/downloads) of such a dataset. &nbsp;  
 
 Here is the final map with locations geocoded:
     <br>
 <img width="500" alt="Image3" src="https://user-images.githubusercontent.com/73584997/119654323-54f6d880-bdf6-11eb-86c5-dc332c44ce78.png">&nbsp;  
-*Figure 3: Object locations geocoded*
+*Figure 3: Object locations geocoded*&nbsp;  
 
 This is a visual representation of where objects in the British collection come from. It’s not surprising that many objects have origins in different places in Britain. It’s interesting to see that India and the Mediterranean region are also highly represented. In Africa, places along the coastline seem to have a high representation in the collection. At first glance, it seems that most object origins were in Britain and India.  To be sure, I did a hot spot analysis using the Optimized Hot Spot Tool:&nbsp;  
 <img width="500" alt="Image4" src="https://user-images.githubusercontent.com/73584997/119654696-ba4ac980-bdf6-11eb-9bfb-bd4b14258d21.png">&nbsp;  
