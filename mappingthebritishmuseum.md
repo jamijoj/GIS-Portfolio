@@ -169,13 +169,15 @@ At this point, for fun, I updated the base map to Modern Antique, which I downlo
 
 This was the result:
 ![ColonialBritain](https://user-images.githubusercontent.com/73584997/120411820-74749080-c323-11eb-9c5f-df694f483461.gif)
-*Figure 21: Animation of colonial Britain, from 1600 to present*
-<br>
-The final step was to overlay the layer showing the objects by time to see if there was any overlap.  
+*Figure 21: Animation of colonial Britain, from 1600 to present*&nbsp;  
+  
+The final step was to overlay the layer showing the objects by time to see if there was any overlap. &nbsp;  
+  
 ![ColonialBritishObjects](https://user-images.githubusercontent.com/73584997/120411936-a84fb600-c323-11eb-87e6-09d430b1f836.gif)
 *Figure 22: Animation of colonial Britain compared to acquisition of objects for the British Museum*&nbsp;  
-The green "sparks" represent objects taken from each country. There is a lag between 1607, which marks the start of Britain’s colonization, and 1759, which is when the British Museum opened. The results of this were insidious. There is a clear correlation between time of colonization and acquisition of objects, particularly in India and countries in Africa and Oceania.
-<br>
+  
+The green "sparks" represent objects taken from each country. There is a lag between 1607, which marks the start of Britain’s colonization, and 1759, which is when the British Museum opened. The results of this were insidious. There is a clear correlation between time of colonization and acquisition of objects, particularly in India and countries in Africa and Oceania.&nbsp;  
+
 I completed my work in ArcGIS Pro with a final, static map, visualized with each object as a single point, for the entire timespan of the British Museum collection. The objects overlay the map of British colonies throughout the entire span of the empire.
 
 <img width="500" alt="finallayout" src="https://user-images.githubusercontent.com/73584997/120412064-e2b95300-c323-11eb-8263-e06bd00234a1.png">
