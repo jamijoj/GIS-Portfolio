@@ -218,7 +218,7 @@ Here we can see that the items sourced from Egypt came from areas along the Nile
 
 By clicking on any of the points, users are given more information about the objects taken from there. For example:&nbsp;  
  
-![dashboardscreenshot3](https://user-images.githubusercontent.com/73584997/120414144-80625180-c327-11eb-858d-7e810a88969a.png)
+![dashboardscreenshot3](https://user-images.githubusercontent.com/73584997/120414144-80625180-c327-11eb-858d-7e810a88969a.png)&nbsp;  
 *Figure 27: Screenshot: Final dashboard - zoomed to Egypt, detail*&nbsp;  
 
 At this point there were five objects taken. This one was acquired by the British Museum in 1895, is listed as a “tray,” and we are given a description of it. 
@@ -232,10 +232,12 @@ This is a process flow that users can follow to explore objects in the context o
 <details>
 <summary>Read more</summary> 
 <br>
-#### Findings&nbsp;  
+#### Findings:&nbsp;  
+
 The guiding concept behind this project was to visualize the acquisition of objects from around the world for the British Museum collection and compare that to imperial Britain’s presence in the countries of origin. The analysis detailed in this report shows that correlation does exist. It is obvious that colonial Britain was indeed taking objects from places during periods of colonization. Even though the British Museum claims that many of these items were not wrongfully taken, saying “they were not acquired as a result of conflict or violence,” the power imbalance between colonizers and colonized implies lack of full willingness and compliance, unless the British Museum can prove otherwise. Having this visualized and shareable is a powerful storytelling tool that will supplement National Geographic’s article well. As somewhat of a side note, another interesting finding from this analysis is that many objects in the British Museum are photographs, printed material, and banknotes. While their claim of having 8 million objects is certainly valid, knowledge of what these are helps contextualize the statement. &nbsp;  
 <br>
-##### Future work&nbsp;  
+##### Future work:&nbsp;  
+  
 One of the limitations of this project was that only half of the objects in the museum have been recorded in their database. This analysis could be relaunched in future to include those objects once they are updated to the database. Something notable in this project which is probably related to that is the exclusion of 57,000 objects from the temporal analysis due to not having an acquisition date recorded. It could be interesting to look into these objects further to see if a pattern exists in objects that are in the database with no acquisition date attached. 
   </details>
   
