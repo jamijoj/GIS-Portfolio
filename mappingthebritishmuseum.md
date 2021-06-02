@@ -6,7 +6,8 @@
 #### Animation of imperial Britain's spread compared to collection of objects for the British Museum, in ten year intervals
 <img width="500" alt="gif1" src="https://user-images.githubusercontent.com/73584997/119765961-2d4d5200-be82-11eb-975f-f93adbeccb1a.gif">&nbsp;  
 - - -
-#### Dashboard to explore objects. For more information on this, see *Approach, Methodology, and Analysis: Step 7*
+#### Dashboard to explore objects, with [link to full dashboard](https://carnegiemellon.maps.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2).
+For more information on this, see *Approach, Methodology, and Analysis: Step 7*
 
 <iframe width="900 " height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
 src="https://www.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2"></iframe>
@@ -101,8 +102,10 @@ There was a peak in acquiring objects around 1818. Collecting picked up in the m
 
 I then joined the collections data table to the geocoded locations layer. For this, I created a new field called “JoinLoc” that copied data from the “Find spot” column, but if null, would fill with the “Production place” field. I then executed a table join to create the new layer. 
 
-I ran another hotspot analysis to see if the results would be different since each point now corresponded to an object, not just a location, but the results were the same – the majority of objects were of British origin (fig. 8).
+I ran another hotspot analysis to see if the results would be different since each point now corresponded to an object, not just a location, but the results were the same – the majority of objects were of British origin (fig. 8).&nbsp;  
+
 <img width="500" alt="Image8" src="https://user-images.githubusercontent.com/73584997/119657452-eb78c900-bdf9-11eb-8b38-d462f05ed246.png">&nbsp;  
+
 *Figure 8: Hotspot analysis 2*&nbsp;  
 
 ### Step 5: Visualize and analyzing collection's temporal data
