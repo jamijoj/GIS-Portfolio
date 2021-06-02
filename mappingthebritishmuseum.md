@@ -160,8 +160,26 @@ This table shows the top 15 locations and years. All come from Britain, Nigeria,
 
 I re-sorted, this time leaving out Great Britain. This time top countries were Nigeria, Japan, Italy, France, Greece, India, and Korea. For top locations for all years (the bar chart), Japan, France, Italy, Nigeria, and Switzerland are the top five. 
 
+<details>
+<summary>3c. Create a layer using the colonial time period dataset (COLDAT) and visualize temporal data
+  <br>
+I was interested in comparing these dates to the dates of British colonization. To do that, I started by creating a layer using country boundary shapefiles and the COLDAT dataset, which was created by academics to track the duration of colonial European empires. I then added the time field and set it to step every 10 years. 
+At this point, for fun, I updated the base map to Modern Antique, which I downloaded from Living Atlas. I also downloaded the Physical Geography symbology set and the Firefly Geography set from Esri Styles to use in the map. 
 
+This was the result:&nbsp;  
+  
+![ColonialBritain](https://user-images.githubusercontent.com/73584997/120411820-74749080-c323-11eb-9c5f-df694f483461.gif)&nbsp;  
+*Figure 21: Animation of colonial Britain, from 1600 to present*
+<br>
+The final step was to overlay the layer showing the objects by time to see if there was any overlap.&nbsp;  
+  
+![ColonialBritishObjects](https://user-images.githubusercontent.com/73584997/120411936-a84fb600-c323-11eb-87e6-09d430b1f836.gif)&nbsp;  
+  
+The green "sparks" represent objects taken from each country. There is a lag between 1607, which marks the start of Britain’s colonization, and 1759, which is when the British Museum opened. The results of this were insidious. There is a clear correlation between time of colonization and acquisition of objects, particularly in India and countries in Africa and Oceania.
+<br>
+I completed my work in ArcGIS Pro with a final, static map, visualized with each object as a single point, for the entire timespan of the British Museum collection. The objects overlay the map of British colonies throughout the entire span of the empire.
 
+<img width="700" alt="finallayout" src="https://user-images.githubusercontent.com/73584997/120412064-e2b95300-c323-11eb-8263-e06bd00234a1.png">
 
-
+  
 
