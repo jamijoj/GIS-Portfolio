@@ -232,7 +232,7 @@ This is a process flow that users can follow to explore objects in the context o
 <details>
 <summary>Read more</summary> 
 <br>
-  &nbsp;  
+
 Findings:&nbsp;  
   
 The guiding concept behind this project was to visualize the acquisition of objects from around the world for the British Museum collection and compare that to imperial Britain’s presence in the countries of origin. The analysis detailed in this report shows that correlation does exist. It is obvious that colonial Britain was indeed taking objects from places during periods of colonization. Even though the British Museum claims that many of these items were not wrongfully taken, saying “they were not acquired as a result of conflict or violence,” the power imbalance between colonizers and colonized implies lack of full willingness and compliance, unless the British Museum can prove otherwise. Having this visualized and shareable is a powerful storytelling tool that will supplement National Geographic’s article well. As somewhat of a side note, another interesting finding from this analysis is that many objects in the British Museum are photographs, printed material, and banknotes. While their claim of having 8 million objects is certainly valid, knowledge of what these are helps contextualize the statement. &nbsp;  
