@@ -8,7 +8,7 @@
 - - -
 ### Dashboard to explore objects. For more information on this, see "Approach, Methodology, and Analysis: Step 4"
 
-<iframe width="700" height="900" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+<iframe width="450" height="900" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
 src="https://www.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2"></iframe>
 
 ## Background
