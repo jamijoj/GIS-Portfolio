@@ -6,7 +6,7 @@
 #### Animation of imperial Britain's spread compared to collection of objects for the British Museum, in ten year intervals
 <img width="500" alt="gif1" src="https://user-images.githubusercontent.com/73584997/119765961-2d4d5200-be82-11eb-975f-f93adbeccb1a.gif">&nbsp;  
 - - -
-#### Dashboard to explore objects. For more information on this, see "Approach, Methodology, and Analysis: Step 4"
+#### Dashboard to explore objects. For more information on this, see *Approach, Methodology, and Analysis: Step 7*
 
 <iframe width="900 " height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
 src="https://www.arcgis.com/apps/dashboards/0be4d9a2fcf24bb9b4a14a43da459ba2"></iframe>
@@ -28,22 +28,21 @@ For this first task, I researched the history of the British museum, how to down
 <details>
 <summary>Step 2: Create a dataset of the British Museum collection</summary> 
 <br>
-The British Museum has made their collections database publicly available at https://www.britishmuseum.org/collection. The database has been in progress for 40 years and is still not done – there are over 8 million pieces in the museum, and only around half of those have been uploaded to the database so far. Access to only half of the objects in the collection is not a problem for this project since 4 million objects is still a good sized sample, but future work could include updating this project to use all of the items in the collection, once the database is finished.
-
+The British Museum has made their collections database publicly available at https://www.britishmuseum.org/collection. The database has been in progress for 40 years and is still not done – there are over 8 million pieces in the museum, and only around half of those have been uploaded to the database so far. Access to only half of the objects in the collection is not a problem for this project since 4 million objects is still a good sized sample, but future work could include updating this project to use all of the items in the collection, once the database is finished.&nbsp;  
+  
 This task took considerably longer than anticipated, in part because the British Museum took down the public SPARQL endpoint that was used to query their collections database. I was left to manually download the necessary datasets through their online collections website. The biggest frustration with this was that downloads of more than 10,000 pieces are not allowed. I didn’t have time to build a web scraper for this purpose, so I went to the collection online, used the filter feature to filter by region (Africa, Oceania, the America, Asia, Europe) and then, for each region, filtered by preset subject filters for arts/architecture, ceremony/ritual, society/human life and religion/belief. At the end I had over 100 datasets downloaded, which I combined into one dataset using Python. I next cleaned the dataset in Python using the following steps:&nbsp;  
- 1. Removed rows with duplicate values&nbsp;  
+ 
+1. Removed rows with duplicate values&nbsp;  
+    
+2. Removed objects that were photographs by removing rows with “Technique” listed as any of the following: Albumen printing, gelatin silver printing, photograph, glyphograph, negative, photograph, postcard. This removed over 100,000 rows.&nbsp;  
   
- 2. Removed objects that were photographs by removing rows with “Technique” listed as any of the following: Albumen printing, gelatin silver printing, photograph, glyphograph , negative, photograph, postcard. This removed over 100,000 rows.&nbsp;  
+3. Removed objects listed as coins, which removed 333,000 rows.&nbsp;  
   
- 3. Removed objects listed as coins, which removed 333,000 rows.&nbsp;  
+4. Filled NaN values with 0&nbsp;  
   
- 4. Filled NaN values with 0&nbsp;  
-  
- 5. Removed unneeded columns (“Image,” “Denomination,” “Escapement,” “Type series,” “Dimensions,” “Inscription,” “Curators comments,” “Bib references,” “BM/Big number,” “Reg number,” “Add ids,” “Cat no,” “Banknote serial number,” “Joined objects,” “Authority,” “Condition,” “School/style,” “State,” “Ethnic Name (made by),” “Ethnic name (assoc),” “Ware,” “Subjects,” “Assoc name,” “Assoc place,” “Assoc events,” “Assoc titles,” “Acq name (excavator),” and “Acq name (previous).” &nbsp;  
-  &nbsp;  
-  
+5. Removed unneeded columns (“Image,” “Denomination,” “Escapement,” “Type series,” “Dimensions,” “Inscription,” “Curators comments,” “Bib references,” “BM/Big number,” “Reg number,” “Add ids,” “Cat no,” “Banknote serial number,” “Joined objects,” “Authority,” “Condition,” “School/style,” “State,” “Ethnic Name (made by),” “Ethnic name (assoc),” “Ware,” “Subjects,” “Assoc name,” “Assoc place,” “Assoc events,” “Assoc titles,” “Acq name (excavator),” and “Acq name (previous).”&nbsp;  
 
-The cleaned dataset had approximately 857,445 rows (each corresponding to an object) and 10 columns. The columns were:&nbsp;  
+ The cleaned dataset had approximately 857,445 rows (each corresponding to an object) and 10 columns. The columns were:&nbsp;  
   
 - *Object_type:* Type of object (painting, pottery, etc) 
 - *Title:* Name of object, if exists
@@ -189,7 +188,7 @@ The green "sparks" represent objects taken from each country. There is a lag bet
 
 I completed my work in ArcGIS Pro with a final, static map, visualized with each object as a single point, for the entire timespan of the British Museum collection. The objects overlay the map of British colonies throughout the entire span of the empire.
 
-<img width="500" alt="finallayout" src="https://user-images.githubusercontent.com/73584997/120412064-e2b95300-c323-11eb-8263-e06bd00234a1.png">
+<img width="500" alt="finallayout" src="https://user-images.githubusercontent.com/73584997/120412064-e2b95300-c323-11eb-8263-e06bd00234a1.png">&nbsp;  
 *Figure 23: Final map layout*
 </details>
  
