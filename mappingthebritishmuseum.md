@@ -153,6 +153,13 @@ I then sorted locations by number of objects per year and selected all those tha
   
 *Figures 17 & 18: Selection from the top 74 source countries and years - table(17) and chart(18)*&nbsp;  
 
+This table shows the top 15 locations and years. All come from Britain, Nigeria, Italy, and Japan. For top locations across all years (the bar chart), Britain, Japan, and France, Italy, and Nigeria are in the top five.&nbsp;  
+<br>
+<img width="450" alt="top15tablenobritain" src="https://user-images.githubusercontent.com/73584997/120410862-d0d6b080-c321-11eb-93e2-f9cfd3d36cfd.png">
+<img width="960" alt="chartnobritain" src="https://user-images.githubusercontent.com/73584997/120410866-d502ce00-c321-11eb-88fd-926b5ad69aac.png">&nbsp;  
+
+I re-sorted, this time leaving out Great Britain. This time top countries were Nigeria, Japan, Italy, France, Greece, India, and Korea. For top locations for all years (the bar chart), Japan, France, Italy, Nigeria, and Switzerland are the top five. 
+
 
 
 
