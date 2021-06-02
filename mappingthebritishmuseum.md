@@ -1,8 +1,6 @@
 # Project: Mapping the British Museum
 
-![FinalMap3](https://user-images.githubusercontent.com/73584997/119645151-b796a700-bdeb-11eb-9438-0d009dc1e202.png)
-
-![ColonialBritishObjects](https://user-images.githubusercontent.com/73584997/119765961-2d4d5200-be82-11eb-975f-f93adbeccb1a.gif)
+<img width="500" alt="Final1" src="https://user-images.githubusercontent.com/73584997/119645151-b796a700-bdeb-11eb-9438-0d009dc1e202.png"><img width="500" alt="gif1" src="https://user-images.githubusercontent.com/73584997/119765961-2d4d5200-be82-11eb-975f-f93adbeccb1a.gif">&nbsp;  
 
 #insert dashboard
 
