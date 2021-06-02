@@ -230,10 +230,10 @@ This is a process flow that users can follow to explore objects in the context o
 <details>
 <summary>Read more</summary> 
 <br>
-##### Findings
-The guiding concept behind this project was to visualize the acquisition of objects from around the world for the British Museum collection and compare that to imperial Britain’s presence in the countries of origin. The analysis detailed in this report shows that correlation does exist. It is obvious that colonial Britain was indeed taking objects from places during periods of colonization. Even though the British Museum claims that many of these items were not wrongfully taken, saying “they were not acquired as a result of conflict or violence,” the power imbalance between colonizers and colonized implies lack of full willingness and compliance, unless the British Museum can prove otherwise. Having this visualized and shareable is a powerful storytelling tool that will supplement National Geographic’s article well. As somewhat of a side note, another interesting finding from this analysis is that many objects in the British Museum are photographs, printed material, and banknotes. While their claim of having 8 million objects is certainly valid, knowledge of what these are helps contextualize the statement. 
+##### Findings&nbsp;  
+The guiding concept behind this project was to visualize the acquisition of objects from around the world for the British Museum collection and compare that to imperial Britain’s presence in the countries of origin. The analysis detailed in this report shows that correlation does exist. It is obvious that colonial Britain was indeed taking objects from places during periods of colonization. Even though the British Museum claims that many of these items were not wrongfully taken, saying “they were not acquired as a result of conflict or violence,” the power imbalance between colonizers and colonized implies lack of full willingness and compliance, unless the British Museum can prove otherwise. Having this visualized and shareable is a powerful storytelling tool that will supplement National Geographic’s article well. As somewhat of a side note, another interesting finding from this analysis is that many objects in the British Museum are photographs, printed material, and banknotes. While their claim of having 8 million objects is certainly valid, knowledge of what these are helps contextualize the statement. &nbsp;  
 <br>
-##### Future work
+##### Future work&nbsp;  
 One of the limitations of this project was that only half of the objects in the museum have been recorded in their database. This analysis could be relaunched in future to include those objects once they are updated to the database. Something notable in this project which is probably related to that is the exclusion of 57,000 objects from the temporal analysis due to not having an acquisition date recorded. It could be interesting to look into these objects further to see if a pattern exists in objects that are in the database with no acquisition date attached. 
   </details>
   
@@ -241,21 +241,21 @@ One of the limitations of this project was that only half of the objects in the 
 <details>
 <summary>Read more</summary> 
 <br>
-##### Data Sources
- - [The British Museum Collection](https://www.britishmuseum.org/collection)
- - [COLDAT colonial dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T9SDEW)
- - Map Layers and Symbology: 
-   - [Basemap - Modern Antique](https://www.arcgis.com/home/item.html?id=f35ef07c9ed24020aadd65c8a65d3754)
-   - [Symbology – Physical geography](https://esri-styles.maps.arcgis.com/home/item.html?id=82b454b4651643d3aa0fca3caf4945f7)
-   - [Symbology - Firefly](https://esri-styles.maps.arcgis.com/home/item.html?id=93a6d9ea3b54478193ba566ab9d8b748)
-   - [World Country Shapefiles](https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0?geometry=-168.047%2C-89.382%2C168.047%2C86.054)
+##### Data Sources&nbsp;  
+- [The British Museum Collection](https://www.britishmuseum.org/collection)
+- [COLDAT colonial dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T9SDEW)
+- Map Layers and Symbology: 
+  - [Basemap - Modern Antique](https://www.arcgis.com/home/item.html?id=f35ef07c9ed24020aadd65c8a65d3754)
+  - [Symbology – Physical geography](https://esri-styles.maps.arcgis.com/home/item.html?id=82b454b4651643d3aa0fca3caf4945f7)
+  - [Symbology - Firefly](https://esri-styles.maps.arcgis.com/home/item.html?id=93a6d9ea3b54478193ba566ab9d8b748)
+  - [World Country Shapefiles](https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0?geometry=-168.047%2C-89.382%2C168.047%2C86.054)
 <br>
-##### References:
+##### References:&nbsp;  
 - “About Us.” British Museum. Accessed 27 Apr, 2021. 
-https://www.britishmuseum.org/privacy-policy#:~:text=The%20British%20Museum%20was%20founded,%2C%20curated%2C%20researched%20and%20exhibited
+https://www.britishmuseum.org/privacy-policy#:~:text=The%20British%20Museum%20was%20founded,%2C%20curated%2C%20researched%20and%20exhibited &nbsp;  
 
 - Alberge, Dalya. “British Museum is world’s largest receiver of stolen goods, says QC.” the 
-Guardian.com. 4 Nov 2019. https://www.theguardian.com/world/2019/nov/04/british-museum-is-worlds-largest-receiver-of-stolen-goods-says-qc
+Guardian.com. 4 Nov 2019. https://www.theguardian.com/world/2019/nov/04/british-museum-is-worlds-largest-receiver-of-stolen-goods-says-qc &nbsp;  
 
 - Landolfi, Jessica. “Even After 130 Years, National Geographic Captures a Wide Demographic 
 Across all Mediums.” CiviScience.com. 12 Aug 2020. https://civicscience.com/even-after-130-years-national-geographic-captures-a-wide-demographic-across-all-mediums/#:~:text=Demographically%2C%20Watchers%20and%20Readers%20are%20Different&text=Specifically%2C%20U.S.%20Adults%20ages%2055,the%20magazine%20is%20the%20opposite.
