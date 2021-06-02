@@ -47,7 +47,7 @@ This task took considerably longer than anticipated, in part because the British
 - *Acq date:* The year the object was acquired by the British Museum
 - *Acq notes (acq):* Any notes about the acquisition
 - *Location:* Says whether the object is on display and, if so, where in the museum it is
-&nbsp;  
+
 ### Step 3: Geocode  
 
 The next step in the process was to geocode the objects based in location. The dataset had two location attributes, “Find spot” and “Production place.” The location information has been recorded inconsistently so some objects only have “Find spot,” noted, some only Production place, and some both. To approach this, I decided to geocode by the “Find spot” column first, which is most relevant to the purpose of this project then geocode anything without a “Find spot” by the “Production place” column, since it still reliably approximates the information of interest.&nbsp;  
