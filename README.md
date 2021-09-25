@@ -23,10 +23,10 @@ Check out some of my work below to see how I've explored the application of digi
 ### Digital Curation and Online Exhibitions
 - [King Manor Museum's Queens of King Manor Online Exhibition](https://www.kingmanor.org/queens-of-king-manor)
 
-
-### Data Visualization
+### Storytelling with Data
+ - ["As the Donor Base Gets Younger, Arts and Culture Institutes Must Shift Their Focus"](https://carnegiemellon.shorthandstories.com/-shifting-money--changing-donors/index.html)
  - [Visualizing Government Debt](https://jamijoj.github.io/jamila-portfolio/dataviz2.html)
- - [Critique by Design](dataviz3&4.md)
- - [Final Project: Part 1](finalpart1.md)
- - [Final Project: Part 2](finalpart2.md)
- - [Final Project: Part 3](finalpart3.md)
+ - [Critique by Design](https://jamijoj.github.io/jamila-portfolio/dataviz3&4.html)
+ - [Building the Story "As the Donor Base Gets Younger..." - Part 1](finalpart1.md)
+ - [Building the Story "As the Donor Base Gets Younger..." Part 2](finalpart2.md)
+ - [Building the Story "As the Donor Base Gets Younger..." Part 3](finalpart3.md)
