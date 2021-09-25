@@ -25,7 +25,7 @@ Check out some of my work below to see how I've explored the application of digi
 
 
 ### Data Visualization
- - [Visualizing Government Debt](dataviz2.md)
+ - [Visualizing Government Debt](https://jamijoj.github.io/jamila-portfolio/dataviz2.html)
  - [Critique by Design](dataviz3&4.md)
  - [Final Project: Part 1](finalpart1.md)
  - [Final Project: Part 2](finalpart2.md)
