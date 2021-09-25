@@ -9,8 +9,6 @@ Check out some of my work below to see how I've explored the application of digi
 
 ## Portfolio
 
-### Data Visualization
-
 ### GIS for Access and the Arts
 
  - [Mapping the British Museum](mappingthebritishmuseum.md)
@@ -24,3 +22,11 @@ Check out some of my work below to see how I've explored the application of digi
 
 ### Digital Curation and Online Exhibitions
 - [King Manor Museum's Queens of King Manor Online Exhibition](https://www.kingmanor.org/queens-of-king-manor)
+
+
+### Data Visualization
+ - [Visualizing Government Debt](dataviz2.md)
+ - [Critique by Design](dataviz3&4.md)
+ - [Final Project: Part 1](finalpart1.md)
+ - [Final Project: Part 2](finalpart2.md)
+ - [Final Project: Part 3](finalpart3.md)
