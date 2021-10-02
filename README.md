@@ -1,4 +1,4 @@
-# Welcome!
+# Welcome to my GIS portfolio!
 
 ## About me
 
