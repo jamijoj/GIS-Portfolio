@@ -16,5 +16,5 @@ Check out some of my work below to see how I've explored the application of digi
  - [Building and deploying a custom Google Map for a non-profit organization](assignment1.md)
  - [Using ArcGIS Insights to investigate the DEA's pain pill database](DEApainpilldatabase.md)
 
-### Check out my Telling Stories with Data Portfolio [here](https://jamijoj.github.io/GIS-Portfolio/)
+### Check out my Telling Stories with Data Portfolio [here](https://jamijoj.github.io/jamila-portfolio/)
 
